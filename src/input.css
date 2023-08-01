@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add your Tailwind CSS classes here */
+
+/* To make the pop-up visible when it's shown */
+.show-popup {
+    display: flex;
+  }
+  
+  /* Transition for the popup */
+  #popupContainer {
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Fade-in effect when the popup becomes visible */
+  #popupContainer.show-popup {
+    opacity: 1;
+  }
+  
+  /* Fade-out effect when the popup becomes hidden */
+  #popupContainer:not(.show-popup) {
+    opacity: 0;
+  }
+  .group:hover i {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(4px);
+  }
+  

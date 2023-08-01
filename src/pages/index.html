@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/730a8ae355.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../input.css">
+</head>
+<body class="font-sans">
+  <nav class="container mx-auto flex mt-8 justify-between">
+    <div class="justify-between font-semibold flex w-full">
+      <div>
+        <h1 class="text-xl tracking-widest cursor-pointer transition hover:text-[#8d6e63]">REYMARK BOQUIRON</h1>
+      </div>
+  
+      <div class="flex gap-4">
+        <ul class="flex items-center gap-2 text-sm  ">
+          <li><a class="transition hover:bg-[#8d6e63] hover:text-white hover:border-[#8d6e63] border 2px px-2 py-1 border-[#212121] rounded-full" href="/"><i class="fa-brands fa-facebook  "></i></a></li>
+          <li><a class="transition hover:bg-[#8d6e63] hover:text-white hover:border-[#8d6e63] border 2px px-2 py-1 border-[#212121] rounded-full" href="/"><i class="fa-brands fa-instagram    "></i></a></li>
+          <li><a class="transition hover:bg-[#8d6e63] hover:text-white hover:border-[#8d6e63] border 2px px-2 py-1 border-[#212121] rounded-full" href="/"><i class="fa-brands fa-github  "></i></a></li>
+        </ul>
+        <div class="cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63]">
+          <a href="#" onclick="openPopup()"><i class="text-2xl fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- The pop-up container -->
+  <div id="popupContainer" class="fixed top-0 left-0 w-screen h-screen bg-[#212121] flex  hidden">
+  
+      
+      <nav class="container flex mt-8 justify-between w-full">
+        <div class="justify-between font-semibold flex w-full">
+          <div>
+            <h1 class="text-xl tracking-widest cursor-pointer text-white transition hover:text-[#8d6e63]">REYMARK BOQUIRON</h1>
+          </div>
+      
+          <div class="flex gap-6">
+           
+            <div class="cursor-pointer  hover:text-[#8d6e63]">
+              <button class="" onclick="closePopup()">
+                <i class="text-white text-2xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+
+      <div>
+
+      </div>
+    
+  </div>
+
+
+  <!-- Hero Section -->
+  <section class="mx-auto container flex mt-8 bg-black w-full h-96 rounded-3xl">
+    
+    <div class="text-white mt-32 px-7">
+      <div>
+        <h1 class="text-7xl">Reymark Boquiron</h1>
+        <p class="mt-3 px-1">Hello, I'm Reymark! <br>I'm a Front-end Developer and a UI/UX Web Designer.</p>
+      </div>
+  
+      
+      <div class="group cursor-pointer justify-between w-80 h-11 border-2 border-white rounded-full mt-6 flex transition hover:bg-white hover:text-black">
+        <button class="text-whit px-2">Know more about me</button>
+        <div class="px-2 mt-1">
+          <i class="fa-solid fa-chevron-right rounded-full py-2 px-3 text-xs bg-[#212121]"></i>
+        </div>
+      </div>
+       
+      </div>
+
+  </section>
+
+
+  <script src="../main.js"></script>
+</body>
+</html>
