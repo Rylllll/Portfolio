@@ -28,3 +28,29 @@
     transform: translateX(4px);
   }
   
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    /* background-color: black; */
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    /* padding: 5px; */
+    position: absolute;
+    z-index: 1;
+    top: 18%; /* Adjust this value to position the tooltip vertically */
+    right: calc(10% + 10px); /* Position the tooltip to the left of the icon */
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

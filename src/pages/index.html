@@ -1,84 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/730a8ae355.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link href="/dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="../input.css">
-</head>
-<body class="font-sans">
-  <nav class="container mx-auto flex mt-8 justify-between">
-    <div class="justify-between font-semibold flex w-full">
-      <div>
-        <h1 class="text-xl tracking-widest cursor-pointer transition hover:text-[#8d6e63]">REYMARK BOQUIRON</h1>
-      </div>
-  
-      <div class="flex gap-4">
-        <ul class="flex items-center gap-2 text-sm  ">
-          <li><a class="transition hover:bg-[#8d6e63] hover:text-white hover:border-[#8d6e63] border 2px px-2 py-1 border-[#212121] rounded-full" href="/"><i class="fa-brands fa-facebook  "></i></a></li>
-          <li><a class="transition hover:bg-[#8d6e63] hover:text-white hover:border-[#8d6e63] border 2px px-2 py-1 border-[#212121] rounded-full" href="/"><i class="fa-brands fa-instagram    "></i></a></li>
-          <li><a class="transition hover:bg-[#8d6e63] hover:text-white hover:border-[#8d6e63] border 2px px-2 py-1 border-[#212121] rounded-full" href="/"><i class="fa-brands fa-github  "></i></a></li>
-        </ul>
-        <div class="cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63]">
-          <a href="#" onclick="openPopup()"><i class="text-2xl fa-solid fa-bars"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryll.dev</title>
+    <script
+      src="https://kit.fontawesome.com/730a8ae355.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../input.css" />
+  </head>
+
+ <style>
+  html{
+
+    scroll-behavior: smooth;
+  }
+ </style>
+  <body class="font-sans">
+    <header class="container mx-auto flex mt-8 justify-between " id="Home">
+      <div class="container justify-between font-semibold flex w-full fixed mx-auto">
+        <div>
+          <h1
+            class="text-xl tracking-widest cursor-pointer transition hover:text-[#8d6e63]"
+          >
+            REYMARK.DEV
+          </h1>
+        </div>
+
+        <div class="flex gap-4">
+          <!-- <ul class="flex items-center gap-1 text-sm">
+            <li>
+              <a
+                class="transitio text-lg px-2 py-1 "
+                href="/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="transition text-lg px-2 py-1 "
+                href="/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="transition text-lg px-2 py-1 "
+                href="/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul> -->
+          <div class="group cursor-pointer transition-transform transform-gpu hover:scale-125">
+            <a href="#" onclick="openPopup()" class="">
+              <div class="bg-black h-1 w-6 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+              <div class="bg-black h-1 w-6 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+            </a>
+          </div>
+          
         </div>
       </div>
-    </div>
-  </nav>
-  
-  <!-- The pop-up container -->
-  <div id="popupContainer" class="fixed top-0 left-0 w-screen h-screen bg-[#212121] flex  hidden">
-  
-      
-      <nav class="container flex mt-8 justify-between w-full">
+    </header>
+
+    <!-- The pop-up container -->
+    <div
+      id="popupContainer"
+      class="fixed top-0 left-0 w-full h-full bg-[#212121] flex hidden mx-auto"
+    >
+      <nav class="container flex mt-8 justify-between w-full mx-auto">
         <div class="justify-between font-semibold flex w-full">
           <div>
-            <h1 class="text-xl tracking-widest cursor-pointer text-white transition hover:text-[#8d6e63]">REYMARK BOQUIRON</h1>
+            <h1
+              id="text2" class="text-xl tracking-widest cursor-pointer text-white transition hover:text-[#8d6e63]"
+            >
+              REYMARK BOQUIRON
+            </h1>
           </div>
-      
+
           <div class="flex gap-6">
-           
-            <div class="cursor-pointer  hover:text-[#8d6e63]">
+            <div class="cursor-pointer hover:text-[#8d6e63]">
               <button class="" onclick="closePopup()">
-                <i class="text-white text-2xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"></i>
+                <i
+                  class="text-white text-2xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"
+                ></i>
               </button>
             </div>
           </div>
         </div>
-
       </nav>
 
-      <div>
-
-      </div>
-    
-  </div>
-
-
-  <!-- Hero Section -->
-  <section class="mx-auto container flex mt-8 bg-black w-full h-96 rounded-3xl">
-    
-    <div class="text-white mt-32 px-7">
-      <div>
-        <h1 class="text-7xl">Reymark Boquiron</h1>
-        <p class="mt-3 px-1">Hello, I'm Reymark! <br>I'm a Front-end Developer and a UI/UX Web Designer.</p>
-      </div>
-  
       
-      <div class="group cursor-pointer justify-between w-80 h-11 border-2 border-white rounded-full mt-6 flex transition hover:bg-white hover:text-black">
-        <button class="text-whit px-2">Know more about me</button>
-        <div class="px-2 mt-1">
-          <i class="fa-solid fa-chevron-right rounded-full py-2 px-3 text-xs bg-[#212121]"></i>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="mx-auto container flex mt-8 w-full h-full rounded-3xl"
+    >
+      <div class="justify-between flex w-full ">
+        <div class="Reymark text-black mt-36" id="typing-container">
+          <div>
+            <p class="tracking-widest font-semibold text-2xl"  id="text1"></p>
+            <div class="flex gap-4">
+              <h1 class="text-7xl mt-8 font-bold" id="text2"><h1 class="text-7xl mt-8" id="text3"></h1></h1>
+            </div>
+           
+            <div class="bg-black  h-1.5 w-10 mt-6"></div>
+            <p class="mt-14 ">
+              I'm a Front-end Web Developer and a UI/UX Web Designer<br>
+              Based on philippines.
+            </p>
+          </div>
+
+          <div
+            class="group cursor-pointer justify-between w-80 h-11 border-2 border-black rounded-full mt-8 flex transition hover:bg-black hover:text-white"
+          >
+            <button class=" px-3">Know more about me</button>
+            <div class="px-2 mt-1">
+              <i
+                class="group text-white fa-solid fa-chevron-right rounded-full py-2 px-3 text-xs bg-[#212121] "
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-28">
+         
+          <img
+            src="../img/reymark.png"
+            class="h-80 w-80 object-cover rounded-full"
+            alt=""
+          />
+          <div class="">
+            <img
+            src="../img/airplane2.png"
+            class="h-24 w-64"
+            alt=""
+          />
+
+          </div>
+         
+          <!-- <button
+            class="text-black cursor-pointer mx-auto text-center px-8 border-2 border-black rounded-full mt-6 flex transition hover:bg-black hover:text-white"
+          >
+            View works
+          </button> -->
         </div>
       </div>
+    </section>
+
+    <!-- About me -->
+    <section class="container mt-56 font-sans w-full h-full mx-auto">
+
+      <div class="justify-between flex gap-8">
+        <!-- Box 1 -->
+        <div class="w-full">
+      
+          <img src="../img/laptop.jpg" class="w-full h-96 object-cover hover:scale-105  transition" alt="">
+        </div>
        
+        <!-- Box 2 -->
+        <div class="w-full h-full rounded-2xl mt-2">
+          <div class=" text-black w-full">
+                <h1 class="text-7xl"><b>About</b> me</h1>
+                <div class="bg-black  h-1.5 w-16 mt-4"></div>
+            <h1 class="text-3xl font-medium mt-4">
+              A dedicated Front-end web developer and UI/UX web designer
+            </h1>
+
+            <p class="mt-6 text-sm">
+              As a seasoned Frontend developer with a year of experience, I'm not only adept at crafting elegant UI/UX web designs but also specialize in modern, minimalist aesthetics. Hailing from the vibrant Philippines, my passion lies in seamlessly merging code with creativity to deliver exceptional digital experiences.
+            </p>
+          </div>
+
+          <div class="gap-4 flex  mt-8">
+            <a
+              class="group relative hover:bg-black hover:text-white inline-flex items-center overflow-hidden rounded-full border border-current px-8 py-2 text-black focus:outline-none focus:ring active:text-indigo-500"
+              href="/download"
+            >
+              <span
+                class="absolute -start-full transition-all group-hover:start-4"
+              >
+              <i class="fa-solid fa-arrow-right"></i>
+              </span>
+
+              <span class="text-sm font-medium transition-all group-hover:ms-4">
+                Contact me
+              </span>
+            </a>
+            <a
+            class="group relative hover:bg-black hover:text-white inline-flex items-center overflow-hidden rounded-full border border-current px-8 py-2 text-black focus:outline-none focus:ring active:text-indigo-500"
+            href="/download"
+          >
+            <span
+              class="absolute -start-full transition-all group-hover:start-4"
+            >
+            <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+            <span class="text-sm font-medium transition-all group-hover:ms-4">
+             Portfolio
+            </span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    
+    
+    <footer class="container w-full h-full mt-56 mx-auto font-sans">
+      <h1 class="text-7xl"><b>Contact</b> me!</h1>
+      <div class="mt-8">
+        <a href="" class="text-lg font-semibold">Contact</a>
+        <div class="bg-gray-300  h-1 w-20 mt-2"></div>
       </div>
 
-  </section>
 
+      <div class="flex gap-4 mt-56">
+        <h1 class="text-gray-500">Follow me on</h1>
+        <div class="text-md font-semibold gap-6">
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">Linkedin</a>
+        </div>
+        
+      </div>
 
-  <script src="../main.js"></script>
-</body>
+      <div class="justify-between flex">
+        <div class="text-gray-500 mb-28">
+          <h1>© 2023. Reymark.dev. All rights reserved.</h1>
+          
+        </div>
+        <a href="#Home" class="cursor-pointer tooltip hover:scale-105 transition hover:text-[#8d6e63] hover:border-[#8d6e63]">
+          <i class="fa-solid fa-chevron-up rounded-full px-3 py-3 border-black border-2"></i>
+          <!-- Add the tooltip text within a span with class "tooltiptext" -->
+          <span class="tooltiptext font-semibold">Scroll to top</span>
+        </a>
+      </div>
+    
+      
+    </footer>
+
+    <script src="../main.js"></script>
+  </body>
 </html>
