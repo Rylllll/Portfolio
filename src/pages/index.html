@@ -19,9 +19,9 @@
     scroll-behavior: smooth;
   }
  </style>
-  <body class="font-sans">
+  <body class="font-sans scrollbar-thumb-gray-400 scrollbar-thin">
     <header class="container mx-auto flex mt-8 justify-between" id="Home">
-      <div class="container justify-between font-semibold flex w-full fixed mx-auto bg-white p-6 top-0">
+      <div class="container justify-between font-semibold flex w-full fixed mx-auto bg-white h-24 py-8 top-0 z-50">
         <div>
           <h1
             class="text-xl tracking-widest cursor-pointer transition hover:text-[#8d6e63]"
@@ -40,21 +40,23 @@
           </div>
           
         </div>
+
+        
       </div>
     </header>
 
     <!-- The pop-up container -->
     <div
       id="popupContainer"
-      class="fixed top-0 left-0 w-full h-full bg-[#212121] flex hidden mx-auto"
+      class="fixed top-0 left-0 w-full h-full bg-[#212121] flex hidden mx-auto z-50"
     >
-      <nav class="container flex mt-8 justify-between w-full mx-auto">
-        <div class="justify-between font-semibold flex w-full">
+      <div class="container flex mt-8 justify-between w-full mx-auto">
+        <div class="justify-between font-semibold flex w-full fixed mx-auto container h-24 py-8 top-0">
           <div>
             <h1
               id="text2" class="text-xl tracking-widest cursor-pointer text-white transition hover:text-[#8d6e63]"
             >
-              REYMARK BOQUIRON
+              REYMARK.DEV
             </h1>
           </div>
 
@@ -68,151 +70,175 @@
             </div>
           </div>
         </div>
-      </nav>
+
+        <div class="container mx-auto mt-20">
+          <div class="inline-grid px-14 gap-6">
+            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Homepage</a>
+            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Services</a>
+            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Portfolio</a>
+            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Contact</a>
+      
+          
+            <div class="grid  mt-16">
+          <div class="flex gap-4 ">
+            <h1 class="text-gray-500">Follow me on</h1>
+            <div class="text-md font-semibold space-x-2 text-white">
+              <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
+              <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
+              <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
+            </div>
+          </div>
+
+            <div class="justify-between flex ">
+              <div class="text-gray-500 mb-20">
+                <h1>© 2023. Reymark.dev. All rights reserved.</h1>
+                
+              </div>
+            
+            </div>
+        
+          </div>
+         
+        </div>
+
+        </div>
+        
+        
+      </div>
+
+   
 
       
     </div>
 
     <!-- Hero Section -->
     <section
-      class="mx-auto container flex mt-8 w-full h-full rounded-3xl"
+      class="mx-auto container flex mt-8 w-full h-full px-14"
     >
       <div class="justify-between flex w-full ">
         <div class="Reymark text-black mt-36" id="typing-container">
           <div>
             <p class="tracking-widest font-semibold text-2xl"  id="text1"></p>
             <div class="flex gap-4">
-              <h1 class="text-7xl mt-8 font-bold" id="text2"><h1 class="text-7xl mt-8" id="text3"></h1></h1>
+              <h1 class="text-6xl mt-4 font-bold" id="text2">
+                <h1 class="text-6xl mt-4" id="text3"></h1>
+              </h1>
             </div>
            
             <div class="bg-black  h-1.5 w-10 mt-6"></div>
+
+            <div class="flex">
             <div class="grid">
 
+            <p class="mt-14 text-gray-500" id="text4">  
+            </p>
+            <p class="text-gray-500" id="text5">
+            </p>
           
-            <p class="mt-14 " id="text4">
-             
-            
-            </p>
-            <p class="" id="text5">
-             
-            
-            </p>
 
           </div>
+          <!-- <div>
+            <img src="../img/scribble.png" class="w-20 h-20 mt-20" alt="">
+          </div> -->
+  
+
+        </div>
+
           </div>
 
           <div class="flex gap-4">
 
      
-          <div
-            class="group cursor-pointer justify-between w-80 h-11 border-2 border-black rounded-full mt-12 flex transition hover:bg-black hover:text-white"
-          >
-            <button class=" px-3">Know more about me</button>
-            <div class="px-2 mt-1">
-              <i
-                class="group text-white fa-solid fa-chevron-right rounded-full py-2 px-3 text-xs bg-[#212121] "
-              ></i>
+            <div class="overflow-hidden cursor-pointer w-80 h-11 mt-12 flex transition relative">
+              
+              <div class="px-4 py-2 text-xs bg-black ">
+               
+                <i class=" text-white text-md fa-solid fa-chevron-down animate-right-move"></i>
+              </div>
+              <button class="px-3">Scroll Down</button>
             </div>
-          </div>
 
-          <div class="flex mt-12 ">
-            <ul class="flex items-center gap-3 text-sm">
-              <li>
-                <a class="" href="/">
-                  <i class="fab fa-facebook text-black transition text-lg px-3 py-1.5 border-black border-2 rounded-full hover:bg-black hover:text-white hover:scale-105"></i>
-                </a>
-              </li>
-              <li>
-                <a class="" href="/">
-                  <i class="fab fa-instagram text-black transition text-lg px-3 py-1.5 border-black border-2 rounded-full hover:bg-black hover:text-white hover:scale-105"></i>
-                </a>
-              </li>
-              <li>
-                <a class="" href="/">
-                  <i class="fab fa-github text-black transition text-lg px-3 py-1.5 border-black border-2 rounded-full hover:bg-black hover:text-white hover:scale-105"></i>
-                </a>
-              </li>
-            </ul>
-           
-            
-            
-          </div>
+
+       
         </div>
       </div>
-        <div class="mt-28">
-         
+      <div class="mt-12 flex items-center gap-8">
+    
           <img
-            src="../img/reymark.png"
-            class="h-80 w-80 object-cover rounded-full"
+            src="../img/reymark.jpg"
+            class="h-full w-80 object-cover"
             alt=""
           />
-          <div class="">
-            <img
-            src="../img/airplane2.png"
-            class="h-24 w-64"
-            alt=""
-          />
-
-          </div>
          
-          <!-- <button
-            class="text-black cursor-pointer mx-auto text-center px-8 border-2 border-black rounded-full mt-6 flex transition hover:bg-black hover:text-white"
-          >
-            View works
-          </button> -->
+        <div class="inline-flex mt-12">
+          <ul class="grid items-center text-sm gap-4">
+            <li>
+              <a class="" href="/">
+                <i class="fa-brands fa-linkedin text-white transition text-lg px-3 py-1.5  hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
+              </a>
+            </li>
+            <li>
+              <a class="" href="/">
+                <i class="fab fa-facebook text-white transition text-lg px-3 py-1.5   hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
+              </a>
+            </li>
+            <li>
+              <a class="" href="/">
+                <i class="fab fa-instagram text-white transition text-lg px-3 py-1.5  hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
+              </a>
+            </li>
+            <li>
+              <a class="" href="/">
+                <i class="fab fa-github text-white transition text-lg px-3 py-1.5   hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+      
     </section>
 
     <!-- About me -->
-    <section class="container mt-56 font-sans w-full h-full mx-auto">
+    <section class="container mt-56 font-sans w-full h-full mx-auto px-14">
 
       <div class="justify-between flex gap-8">
     
         <!-- Box 2 -->
         <div class="w-full h-full rounded-2xl mt-2">
           <div class=" text-black w-full">
-                <h1 class="text-7xl"><b>About</b> me</h1>
+                <h1 class="text-5xl"><b>About</b> Me.</h1>
                 <div class="bg-black  h-1.5 w-8 mt-1"></div>
-            <h1 class="text-3xl font-medium mt-8">
-              A dedicated Front-end web developer and UI/UX web designer
+            <h1 class="text-2xl mt-8">
+              A dedicated <b>Front-end web developer</b> and <b>UI/UX web designer</b>
             </h1>
 
-            <p class="mt-8 text-sm">
+            <p class="mt-8 text-sm text-gray-500">
               As a seasoned Frontend developer with a year of experience, I'm not only adept at crafting elegant UI/UX web designs but also specialize in modern, minimalist aesthetics. Hailing from the vibrant Philippines, my passion lies in seamlessly merging code with creativity to deliver exceptional digital experiences.
             </p>
           </div>
 
-          <div class="gap-4 flex  mt-10">
+          <div class="gap-4 flex mt-10">
             <a
-              class="group relative hover:bg-black hover:text-white inline-flex items-center overflow-hidden rounded-full border border-current px-8 py-2 text-black focus:outline-none focus:ring active:text-indigo-500"
-              href="/download"
-            >
-              <span
-                class="absolute -start-full transition-all group-hover:start-4"
-              >
-              <i class="fa-solid fa-arrow-right"></i>
-              </span>
-
-              <span class="text-sm font-medium transition-all group-hover:ms-4">
-                Contact me
-              </span>
-            </a>
-            <a
-            class="group relative hover:bg-black hover:text-white inline-flex items-center overflow-hidden rounded-full border border-current px-8 py-2 text-black focus:outline-none focus:ring active:text-indigo-500"
-            href="/download"
-          >
-            <span
-              class="absolute -start-full transition-all group-hover:start-4"
-            >
-            <i class="fa-solid fa-arrow-right"></i>
-            </span>
-
-            <span class="text-sm font-medium transition-all group-hover:ms-4">
-             Portfolio
-            </span>
-          </a>
+  class="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+  href="/download"
+>
+  <span
+    class="absolute inset-0 border border-black group-active:border-black"
+  ></span>
+  <span
+    class="block border border-black bg-black px-12 py-3 transition-transform active:border-black active:bg-black group-hover:-translate-x-1 group-hover:-translate-y-1"
+  >
+    Contact Me
+  </span>
+</a>
+<div>
+  <a class="" href="/">
+    <i class="fa-brands fa-linkedin text-black transition text-lg px-3 py-1.5 border-2 border-black hover:bg-black bg-white hover:text-white hover:scale-105"></i>
+  </a>
+</div>
+         
           </div>
+          
         </div>
 
             <!-- Box 1 -->
@@ -225,9 +251,9 @@
     </section>
 
     <!-- Skills -->
-    <section class="container mx-auto mt-56">
+    <section class="container mx-auto mt-56 px-14">
       <div class=" text-black w-full">
-        <h1 class="text-7xl"><b>My</b> skills</h1>
+        <h1 class="text-5xl"><b>My</b> skills</h1>
         <div class="bg-black  h-1.5 w-8 mt-1"></div>
   </div>
 
@@ -262,39 +288,54 @@
   </div>
     </section>
     
-    <footer class="container w-full h-full mt-56 mx-auto font-sans">
-      <h1 class="text-7xl"><b>Contact</b> me!</h1>
+    
+
+    <footer class="container w-full h-full mt-28 mx-auto font-sans px-14">
+      <div class="bg-gray-300  h-0.5 w-full mt-28 container mx-auto px-14">
+
+      </div>
+      <h1 class="text-6xl mt-28"><b>Contact</b> me!</h1>
       <div class="mt-8">
-        <a href="" class="text-lg font-semibold">Contact</a>
-        <div class="bg-gray-300  h-1 w-20 mt-2"></div>
+        <div class="text-lg font-semibold relative cursor-pointer group">Contact
+        <div class="bg-gray-300  h-0.5 w-20 mt-2 hover:bg-black transition hover:scale-105"></div>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <a href="" class="text-lg font-semibold">Portfolio</a>
+        <div class="bg-gray-300  h-0.5 w-20 mt-2 hover:bg-black transition hover:scale-105"></div>
       </div>
 
 
-      <div class="flex gap-4 mt-56">
+      <div class="flex gap-4 mt-36">
         <h1 class="text-gray-500">Follow me on</h1>
-        <div class="text-md font-semibold gap-6">
-          <a href="">Facebook</a>
-          <a href="">Instagram</a>
-          <a href="">Linkedin</a>
+        <div class="text-md font-semibold space-x-2">
+          <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
+          <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
+          <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
         </div>
         
       </div>
 
       <div class="justify-between flex">
-        <div class="text-gray-500 mb-20">
+        <div class="text-gray-500 ">
           <h1>© 2023. Reymark.dev. All rights reserved.</h1>
           
         </div>
-        <a href="#Home" class="cursor-pointer tooltip hover:scale-105 transition hover:text-[#8d6e63] hover:border-[#8d6e63]">
-          <i class="fa-solid fa-chevron-up rounded-full px-3 py-3 border-black border-2"></i>
-          <!-- Add the tooltip text within a span with class "tooltiptext" -->
-          <span class="tooltiptext font-semibold">Scroll to top</span>
-        </a>
+      
       </div>
     
       
     </footer>
 
+    <div class="justify-end flex container mx-auto mb-20">
+      <a href="#Home" class="tooltip ">
+        <i class="fa-solid fa-chevron-up  px-3 py-3 border-black border-2 cursor-pointer hover:scale-110 transition hover:text-[#8d6e63] hover:border-[#8d6e63]"></i>
+        <span class="tooltiptext font-semibold">Scroll to top</span>
+      </a>
+    </div>
+
     <script src="../main.js"></script>
+    <script src="../scroll.js"></script>
   </body>
 </html>

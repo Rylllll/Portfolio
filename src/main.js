@@ -22,7 +22,7 @@ const textsToType = [
 // Delay between each character in milliseconds (adjust this value for speed control)
 const typingDelay = 100;
 // Delay between the text1 animation and text2 animation in milliseconds
-const text2Delay = 1000; // Adjust this value as needed
+const text2Delay = 500; // Adjust this value as needed
 const text3Delay = 100; // Adjust this value as needed
 const text4Delay = 1000; // Adjust this value as needed
 const text5Delay = 1000; // Adjust this value as needed

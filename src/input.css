@@ -54,3 +54,21 @@
     visibility: visible;
     opacity: 1;
   }
+
+
+  @keyframes right-move {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Adjust this value to control the height of the animation */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-right-move {
+    animation: right-move 4s cubic-bezier(0.42, 0, 0.58, 1) infinite; /* Adjust the animation duration and bezier values as needed */
+  }
+

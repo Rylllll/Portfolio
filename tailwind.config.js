@@ -11,8 +11,11 @@ module.exports = {
 
     },
 
-    container:{
-      
+    height:{
+      'custom': '450px',
+    },
+    width:{
+      'custom': '300px',
     },
 
     
@@ -21,11 +24,14 @@ module.exports = {
       'sans': ['Poppins', 'sans-serif'],
       'del': ['DELIRIUM NCV', 'sans-serif'],
       'script': ['Dancing Script', 'cursive'],
+      'bai': ['Bai Jamjuree', 'sans-serif'],
 
   },
 
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 
