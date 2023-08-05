@@ -17,6 +17,7 @@ sr.reveal(".scrollrevs", {
 
 sr.reveal(".scrollrevss", {
   origin: 'bottom',
+  interval: 100,
 })
 
 sr.reveal(".rightsroll", {

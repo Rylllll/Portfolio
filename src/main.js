@@ -12,20 +12,19 @@ function openPopup() {
 
 // Array of texts to be displayed in the typing animations
 const textsToType = [
-  "Hello! I'm",
+  
   "Reymark ",
   "Boquiron",
-  "I'm a Front-end Web Developer and a UI/UX Web Designer",
-  "Based on philippines."
+
 ];
 
-// Delay between each character in milliseconds (adjust this value for speed control)
-const typingDelay = 100;
+// Decreased typing delay for faster typing speed (adjust this value for speed control)
+const typingDelay = 50; // Adjust this value for faster or slower typing
+
 // Delay between the text1 animation and text2 animation in milliseconds
 const text2Delay = 500; // Adjust this value as needed
 const text3Delay = 100; // Adjust this value as needed
-const text4Delay = 1000; // Adjust this value as needed
-const text5Delay = 1000; // Adjust this value as needed
+
 
 // Function to simulate the typing animation
 function typeText() {
@@ -49,4 +48,5 @@ function typeText() {
 
 // Call the typing animation function after the page has loaded
 window.onload = typeText;
+
 

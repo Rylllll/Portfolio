@@ -12,10 +12,12 @@ module.exports = {
     },
 
     height:{
-      'custom': '500px',
+      'custom': '520px',
+      'customs': '550px',
     },
     width:{
       'custom': '300px',
+      'customs': '400px',
     },
 
     
