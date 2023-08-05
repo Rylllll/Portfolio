@@ -12,6 +12,7 @@ sr.reveal(".scrollrev, .latest", {
 
 sr.reveal(".scrollrevs", {
   origin: 'top',
+  interval: 100,
 })
 
 sr.reveal(".scrollrevss", {

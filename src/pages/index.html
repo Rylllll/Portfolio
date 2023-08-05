@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="../input.css" />
   </head>
@@ -174,7 +175,7 @@
           <ul class="grid items-center text-sm gap-4">
             <li>
               <a class="" href="/">
-                <i class="fa-brands fa-linkedin text-white transition text-lg px-3 py-1.5  hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
+                <i class="fa-brands fa-linkedin text-white transition text-lg px-3.5 py-1.5  hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
               </a>
             </li>
             <li>
@@ -201,23 +202,43 @@
     <!-- About me -->
     <section class="container mt-56 font-sans w-full h-full mx-auto px-14">
 
-      <div class="justify-between flex gap-8">
-    
+      <div class="justify-between flex gap-12">
+ <!-- Box 1 -->
+ <div class="w-full scrollrev">
+      
+  <img src="../img/table.jpg" class="w-full h-custom object-cover hover:scale-105  transition" alt="">
+</div>
         <!-- Box 2 -->
-        <div class="w-full h-full rounded-2xl mt-2">
+        <div class="w-full h-full rounded-2xl mt-6 rightsroll">
           <div class=" text-black w-full">
-                <h1 class="text-5xl"><b>About</b> Me.</h1>
-                <div class="bg-black  h-1.5 w-8 mt-1"></div>
-            <h1 class="text-2xl mt-8">
-              A dedicated <b>Front-end web developer</b> and <b>UI/UX web designer</b>
-            </h1>
+            <div class="flex relative">
+            <div class="bg-[#8d6e63] bg-opacity-50 h-12 w-20 mt-1 absolute top-0 left-44 z-0"></div>
+                <h1 class="text-5xl z-10 font-semibold">About Me.</h1>
+              </div>
 
-            <p class="mt-8 text-sm text-gray-500">
-              As a seasoned Frontend developer with a year of experience, I'm not only adept at crafting elegant UI/UX web designs but also specialize in modern, minimalist aesthetics. Hailing from the vibrant Philippines, my passion lies in seamlessly merging code with creativity to deliver exceptional digital experiences.
-            </p>
+                <div class="flex gap-2">
+                  <div class="bg-black w-10 h-0.5 mt-14"></div>
+                  <h1 class="text-2xl mt-10">
+                    A dedicated <b>Front-end web developer</b> and <b>UI/UX web designer</b>
+                  </h1>
+      
+                </div>
+           
+                <div class=" px-9">
+                  <p class="mt-8 text-sm text-gray-500">
+                    As a seasoned Frontend developer with a year of experience, I'm not only adept at crafting elegant UI/UX web designs but also specialize in modern, minimalist aesthetics. Hailing from the vibrant Philippines, my passion lies in seamlessly merging code with creativity to deliver exceptional digital experiences.
+                  </p>
+      
+                </div>
+            
+            <div class="flex gap-2 mt-8 text-sm px-4">
+              <i class="fa-solid fa-square text-xs mt-1"></i>
+              <p><b>My skills are:</b> HTML, CSS, Javascript, PHP, Laravel, Tailwind-CSS, Git & Github, Bootstrap, figma and Adobe XD</p>
+            </div>
+           
           </div>
 
-          <div class="gap-4 flex mt-10">
+          <div class="gap-4 flex mt-12 px-9">
             <a
   class="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
   href="/download"
@@ -241,54 +262,127 @@
           
         </div>
 
-            <!-- Box 1 -->
-            <div class="w-full">
-      
-              <img src="../img/laptop.jpg" class="w-full h-96 object-cover hover:scale-105  transition" alt="">
-            </div>
+           
            
       </div>
     </section>
 
     <!-- Skills -->
     <section class="container mx-auto mt-56 px-14">
-      <div class=" text-black w-full">
-        <h1 class="text-5xl"><b>My</b> skills</h1>
-        <div class="bg-black  h-1.5 w-8 mt-1"></div>
+      <div class=" text-black w-full mx-auto justify-center grid ">
+       
+        <div class="flex relative">
+          <!-- Background box with low opacity -->
+          <div class="bg-[#8d6e63] bg-opacity-50 h-12 w-16 mt-1 absolute top-0 right-0 z-0"></div>
+        
+          <!-- Text content -->
+          <h1 class="text-5xl z-10 font-semibold">Services.</h1>
+        </div>
+        
+        
+
   </div>
 
-  <div class="flex justify-between mt-12 mx-auto container">
-    <div class="border 1px border-gray-300 w-full h-56">
-      <i class="fa-brands fa-html5 mx-auto flex justify-center text-7xl mt-16"></i>
-      <h1 class="text-center mt-4">HTML</h1>
-    </div>
-    <div class="border 1px border-gray-300 w-full h-56">
-      <i class="fa-brands fa-css3-alt mx-auto flex justify-center text-7xl mt-16"></i>
-      <h1 class="text-center mt-4">CSS</h1>
-    </div>
-    <div class="border 1px border-gray-300 w-full h-56">
-      <i class="fa-brands fa-square-js mx-auto flex justify-center text-7xl mt-16"></i>
-      <h1 class="text-center mt-4">JAVASCRIPT</h1>
-    </div>
-  </div>
+  <div class="flex justify-between mt-20 mx-auto container gap-10">
+    <div class="w-full scrollrevs">
 
-  <div class="flex justify-between mx-auto container">
-    <div class="border 1px border-gray-300 w-full h-56">
-      <i class="fa-brands fa-php mx-auto flex justify-center text-7xl mt-16"></i>
-      <h1 class="text-center mt-4">PHP</h1>
-    </div>
-    <div class="border 1px border-gray-300 w-full h-56">
-      <i class="fa-brands fa-laravel mx-auto flex justify-center text-7xl mt-16"></i>
-      <h1 class="text-center mt-4">LARAVEL</h1>
-    </div>
-    <div class="border 1px border-gray-300 w-full h-56">
-      <img src="../img/tailwind.png" class="mx-auto flex justify-center text-7xl mt-10 w-28 h-28" alt="">
-      <h1 class="text-center">TAILWIND</h1>
-    </div>
+    <a href="" class="group relative block h-64 sm:h-80 lg:h-96">
+      <span class="absolute inset-0 border-8 border-[#8d6e63]"></span>
+    
+      <div class="relative flex items-center justify-center h-full transform border-4 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+        <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8  mt-10">
+          <div class="justify-center text-center flex">
+            <div class="bg-[#8d6e63] w-11 h-11 justify-end flex ">
+              <i class="fa-regular fa-object-group fa-3x text-6xl"></i>
+            </div>
+          </div>
+         
+    
+          <h2 class="mt-6 text-xl font-semibold sm:text-2xl">Web Designing</h2>
+        </div>
+    
+        <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+          <h3 class="mt-4 text-xl font-medium sm:text-2xl">Web Designing</h3>
+    
+          <p class="mt-4 text-sm sm:text-base w-56">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+            praesentium voluptatem omnis atque culpa repellendus.
+          </p>
+    
+          <p class="mt-8 font-bold">Read more</p>
+        </div>
+      </div>
+    </a>
   </div>
+    
+  <div class="w-full scrollrevs">
+    <a href="" class="group relative block h-64 sm:h-80 lg:h-96">
+      <span class="absolute inset-0 border-8 border-[#8d6e63]"></span>
+    
+      <div class="relative flex items-center justify-center h-full transform border-4 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+        <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8  mt-10">
+          <div class="justify-center text-center flex">
+            <div class="bg-[#8d6e63] w-11 h-11 justify-end flex ">
+              <i class="fa-solid fa-laptop-code text-6xl"></i>
+            </div>
+          </div>
+         
+    
+          <h2 class="mt-6 text-xl font-semibold sm:text-2xl">Web Development</h2>
+        </div>
+    
+        <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+          <h3 class="mt-4 text-xl font-medium sm:text-2xl">Web Development</h3>
+    
+          <p class="mt-4 text-sm sm:text-base w-56">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+            praesentium voluptatem omnis atque culpa repellendus.
+          </p>
+    
+          <p class="mt-8 font-bold">Read more</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="w-full scrollrevs">
+    <a href="" class="group relative block h-64 sm:h-80 lg:h-96">
+      <span class="absolute inset-0 border-8 border-[#8d6e63]"></span>
+    
+      <div class="relative flex items-center justify-center h-full transform border-4 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+        <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8  mt-10">
+          <div class="justify-center text-center flex">
+            <div class="bg-[#8d6e63] w-11 h-11 justify-end flex ">
+              <i class="fa-solid fa-pen-nib text-6xl"></i>
+            </div>
+          </div>
+         
+    
+          <h2 class="mt-6 text-xl font-semibold sm:text-2xl">Graphic Design</h2>
+        </div>
+    
+        <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+          <h3 class="mt-4 text-xl font-medium sm:text-2xl">Graphic Design</h3>
+    
+          <p class="mt-4 text-sm sm:text-base w-56">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+            praesentium voluptatem omnis atque culpa repellendus.
+          </p>
+    
+          <p class="mt-8 font-bold">Read more</p>
+        </div>
+      </div>
+    </a>
+  </div>
+    
+    </div>
+    
     </section>
+
     
-    
+    <!-- Projects -->
+    <section>
+
+    </section>
 
     <footer class="container w-full h-full mt-28 mx-auto font-sans px-14">
       <div class="bg-gray-300  h-0.5 w-full mt-28 container mx-auto px-14">
@@ -337,5 +431,8 @@
 
     <script src="../main.js"></script>
     <script src="../scroll.js"></script>
+    <script src="../scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </body>
 </html>

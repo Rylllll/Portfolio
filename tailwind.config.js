@@ -12,7 +12,7 @@ module.exports = {
     },
 
     height:{
-      'custom': '450px',
+      'custom': '500px',
     },
     width:{
       'custom': '300px',
