@@ -20,14 +20,14 @@
     scroll-behavior: smooth;
   }
  </style>
-  <body class="font-sans scrollbar-thumb-gray-400 scrollbar-thin">
-    <header class="container mx-auto flex mt-8 justify-between" id="Home">
-      <div class="container justify-between font-semibold flex w-full fixed mx-auto bg-white h-24 py-8 top-0 z-50">
+  <body class="font-sans scrollbar-thumb-gray-400 scrollbar-thin" id="Home">
+    <header class=" mx-auto flex mt-8 justify-between" >
+      <div class="px-7 justify-between font-semibold flex w-full fixed mx-auto bg-white h-20 py-8 top-0 z-50">
         <div>
           <h1
-            class="text-xl tracking-widest cursor-pointer transition hover:text-[#8d6e63]"
+            class="text-md tracking-widest cursor-pointer transition font-bold hover:text-[#8d6e63]"
           >
-            REYMARK.DEV
+            REY.DEV
           </h1>
         </div>
 
@@ -35,8 +35,8 @@
         
           <div class="group cursor-pointer transition-transform transform-gpu hover:scale-125">
             <a href="#" onclick="openPopup()" class="">
-              <div class="bg-black h-0.5 w-6 mt-1.5 group-hover:bg-[#8d6e63]"></div>
-              <div class="bg-black h-0.5 w-6 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+              <div class="bg-black h-0.5 w-5 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+              <div class="bg-black h-0.5 w-5 mt-1.5 group-hover:bg-[#8d6e63]"></div>
             </a>
           </div>
           
@@ -51,13 +51,13 @@
       id="popupContainer"
       class="fixed top-0 left-0 w-full h-full bg-[#212121] flex hidden mx-auto z-50"
     >
-      <div class="container flex mt-8 justify-between w-full mx-auto">
-        <div class="justify-between font-semibold flex w-full fixed mx-auto container h-24 py-8 top-0">
+      <div class="flex mt-8 justify-between w-full mx-auto ">
+        <div class="justify-between font-semibold flex w-full fixed mx-auto h-24 px-7 py-8 top-0">
           <div>
             <h1
-              id="text2" class="text-xl tracking-widest cursor-pointer text-white transition hover:text-[#8d6e63]"
+              id="text2" class="text-md tracking-widest cursor-pointer text-white transition font-bold hover:text-[#8d6e63]"
             >
-              REYMARK.DEV
+              REY.DEV
             </h1>
           </div>
 
@@ -65,7 +65,7 @@
             <div class="cursor-pointer hover:text-[#8d6e63]">
               <button class="" onclick="closePopup()">
                 <i
-                  class="text-white text-2xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"
+                  class="text-white text-xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"
                 ></i>
               </button>
             </div>
@@ -119,10 +119,10 @@
       <div class="justify-between flex w-full ">
         <div class="Reymark text-black mt-36" id="typing-container">
           <div>
-            <p class="tracking-widest font-semibold text-2xl"  >Hello! I'm</p>
+            <p class="tracking-widest font-semibold text-2xl scrollrevs"  >Hello! I'm</p>
             <div class="grid gap-4">
          
-              <h1 class="text-7xl mt-4 tracking-tighter" ><b>Reymark</b> Boquiron
+              <h1 class="text-7xl mt-4 tracking-tighter scrollrevs" ><b>Reymark</b> Boquiron
                 <div class="bg-black w-10 h-1 mt-4"></div>
               </h1>
             </div>
@@ -132,7 +132,7 @@
               
     
           
-              <p class="mt-16 text-md text-gray-600">  
+              <p class="mt-16 text-md text-gray-600 scrollrevs">  
                 I specialize in creating responsive and user-friendly <br> websites as a  Front-end Web Developer and UI/UX <br>Web Designer. My expertise lies in crafting engaging <br>and visually appealing online experiences for users.
               </p>
       
@@ -142,27 +142,27 @@
 
           </div>
 
-          <div class="flex gap-4">
+          <div class="flex gap-4 scrollrevs">
 
      
-            <div class="overflow-hidden cursor-pointer w-80 h-11 mt-16 flex transition relative">
+            <a href="#About" class="overflow-hidden cursor-pointer w-80 h-11 mt-16 flex transition relative">
               
               <div class="px-4 py-2 text-xs bg-black ">
                
                 <i class=" text-white text-md fa-solid fa-chevron-down animate-right-move"></i>
               </div>
               <button class="px-3">Scroll Down</button>
-            </div>
+            </a>
 
 
        
         </div>
       </div>
-      <div class="mt-12 flex items-center gap-8">
+      <div class="mt-12 flex items-center gap-8 scrollrevs">
     
           <img
             src="../img/reymark.jpg"
-            class="h-custom w-customs object-cover"
+            class="h-pic w-customs object-cover"
             alt=""
           />
          
@@ -196,24 +196,29 @@
 
 
     <!-- box -->
-    <section class="container mx-auto px-14 flex justify-between mt-28">
-      <div class="w-80 h-52 border 1px border-gray-300 text-center">
-        <i class="fa-brands fa-figma text-6xl mx-auto mt-20 scrollrevss"></i>
+    <section class="container mx-auto px-14 flex mt-28">
+    
+      <div class="w-full h-52 border 1px border-gray-300 text-center">
+        <i class="fa-brands fa-figma text-6xl font-bold mx-auto mt-20 scrollrevss"></i>
       </div>
-      <div class="w-80 h-52 border 1px border-gray-300 text-center">
+      <div class="w-full h-52 border 1px border-gray-300 text-center">
         <img src="../img/xd.png" class="w-20 h-20 mx-auto mt-16 scrollrevss" alt="">
       </div>
-      <div class="w-80 h-52 border 1px border-gray-300 text-center">
+      <div class="w-full h-52 border 1px border-gray-300 text-center">
         <img src="../img/tailwind.png" class=" w-28 h-28 mx-auto mt-11 scrollrevss" alt="">
       </div>
-      <div class="w-80 h-52 border 1px border-gray-300 text-center">
-        <i class="fa-brands fa-laravel text-6xl mx-auto mt-20 scrollrevss"></i>
+      <div class="w-full h-52 border 1px border-gray-300 text-center">
+        <i class="fa-brands fa-laravel font-bold text-6xl mx-auto mt-20 scrollrevss"></i>
       </div>
     </section>
 
     <!-- About me -->
-    <section class="container mt-56 font-sans w-full h-full mx-auto px-14">
-      <div class="flex relative">
+    <div id="About">
+
+    </div>
+    <section class="container mt-28 font-sans w-full h-full mx-auto px-14" >
+     
+      <div class="flex relative" >
       
         <h1 class="text-5xl z-10 font-bold w-96">About Me</h1>
         <div class="w-full h-0.5 bg-gray-300 mt-6 "></div>
@@ -221,26 +226,26 @@
       <div class="justify-between flex gap-12">
 
         <!-- Box 2 -->
-        <div class="w-full h-full rounded-3xl mt-20 rightsroll">
+        <div class="w-full h-full rounded-3xl mt-12 scrollrev">
           <div class=" text-black w-full">
             
 
                 <div class="flex gap-2">
                  
-                  <h1 class="text-2xl mt-10">
-                    A dedicated <b>Front-end web developer</b> and <b>UI/UX web designer</b>
+                  <h1 class="text-2xl mt-2 font-semibold w-full">
+                    A dedicated Front-end web developer and UI/UX web designer
                   </h1>
       
                 </div>
            
           
-                  <p class="mt-8 text-sm text-gray-600">
+                  <p class="mt-8 text-md text-gray-600">
                     As a seasoned Frontend developer with a year of experience, I'm not only adept at crafting elegant UI/UX web designs but also specialize in modern, minimalist aesthetics. Hailing from the vibrant Philippines, my passion lies in seamlessly merging code with creativity to deliver exceptional digital experiences.
                   </p>
       
            
             
-            <div class="flex gap-2 mt-8 text-sm">
+            <div class="flex gap-2 mt-10 text-sm">
               <i class="fa-solid fa-square text-xs mt-1"></i>
               <p><b>My skills are:</b> HTML, CSS, Javascript, PHP, Laravel, Tailwind-CSS, Git & Github, Bootstrap, figma and Adobe XD</p>
             </div>
@@ -263,9 +268,9 @@
         </div>
 
          <!-- Box 1 -->
- <div class="w-full scrollrev">
+ <div class="w-full rightsroll">
       
-  <img src="../img/table.jpg" class="w-full h-96 object-cover hover:scale-105  transition mt-24" alt="">
+  <img src="../img/table.jpg" class="w-full h-96 object-cover hover:scale-105  transition mt-16" alt="">
 </div>   
            
       </div>
@@ -276,32 +281,40 @@
 
     <!-- Services -->
     
-    <section class="w-full h-customs bg-[#212121] mt-56">
+    <section class="w-full h-custom bg-[#212121] mt-28">
       <div class="container px-14 mx-auto">
         <div class="flex container gap-2">
           
-          <h1 class="text-5xl z-10 font-bold w-96 text-white mt-10">Services</h1>
-          <div class="w-full h-0.5 bg-gray-300 mt-16"></div>
+          <h1 class="text-5xl z-10 font-bold w-96 text-white mt-16">Services</h1>
+          <div class="w-full h-0.5 bg-gray-300 mt-18"></div>
          
         </div>
-        <p class="text-white mt-4">Why is it worth using my services?</p>
-        <div class="flex mt-24 justify-between gap-4 mx-auto">
-          <div class="w-full h-64">
-
-            <i class="fa-solid fa-pen-nib mx-auto text-white text-xl scrollrevss"></i>
-            <h1 class="mt-8 text-xl text-white font-bold">Web designing</h1>
-            <p class="mt-8 text-white w-72">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis animi neque quis porro doloremque rerum odit enim, eligendi aut nisi sint possimus fugit ipsam</p>
-          </div>
-          <div class="w-full h-80 mx-auto justify-center px-40 ">
-           <div class="w-full h-80 mx-auto border-white border 1px px-4">
-            <i class="fa-solid fa-pen-nib mx-auto text-white text-xl scrollrevss"></i>
-            <h1 class="mt-8 text-xl text-white font-bold">Web designing</h1>
-            <p class="mt-8 text-white w-72">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis animi neque quis porro doloremque rerum odit enim, eligendi aut nisi sint possimus fugit ipsam</p>
-           </div>
+        <p class="text-gray-400 mt-4">Why is it worth using my services?</p>
+        <div class="flex mt-20 justify-between gap-16 w-full">
+          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border 1px scrollrevss">
+        
+            <i class="fa-solid fa-pen-nib mx-auto  text-white text-xl "></i>
+            <h1 class="mt-8 text-xl text-white font-bold ">Web Designing</h1>
+            <p class="mt-8  w-full text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis animi neque quis porro doloremque rerum odit enim.</p>
+       
           
           </div>
-          <div class="w-full h-64  text-center">
-            <i class="fa-brands fa-laravel text-6xl mx-auto mt-20 scrollrevss"></i>
+
+          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border 1px scrollrevss">
+           
+            <i class="fa-solid fa-laptop-code mx-auto  text-white text-xl "></i>
+            <h1 class="mt-8 text-xl text-white font-bold ">Web Development</h1>
+            <p class="mt-8  w-full text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis animi neque quis porro doloremque rerum odit enim.</p>
+       
+          
+          </div>
+          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border 1px scrollrevss">
+            
+            <i class="fa-solid fa-object-ungroup mx-auto text-white text-xl "></i>
+            <h1 class="mt-8 text-xl text-white font-bold ">Graphic Designing</h1>
+            <p class="mt-8  w-full text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis animi neque quis porro doloremque rerum odit enim.</p>
+       
+          
           </div>
         </div>
        
@@ -344,7 +357,7 @@
       
     </footer>
 
-    <div class="justify-end flex container mx-auto mb-20">
+    <div class="justify-end flex px-7 mx-auto mb-20 scrollrevss">
       <a href="#Home" class="tooltip ">
         <i class="fa-solid fa-chevron-up  px-3 py-3 border-black border-2 cursor-pointer hover:scale-110 transition hover:text-[#8d6e63] hover:border-[#8d6e63]"></i>
         <span class="tooltiptext font-semibold">Scroll to top</span>

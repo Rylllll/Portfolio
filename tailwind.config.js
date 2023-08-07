@@ -12,14 +12,19 @@ module.exports = {
     },
 
     height:{
-      'custom': '520px',
+      'pic': '520px',
+      'custom': '600px',
       'customs': '550px',
+  
     },
     width:{
       'custom': '300px',
       'customs': '400px',
     },
-
+    spacing:{
+      '18': '5.5rem',
+     
+    },
     
 
     fontFamily: {
