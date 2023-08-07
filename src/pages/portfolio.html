@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryll.dev</title>
+    <script
+      src="https://kit.fontawesome.com/730a8ae355.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../input.css" />
+  </head>
+
+ <style>
+  html{
+
+    scroll-behavior: smooth;
+  }
+ </style>
+  <body class=" scrollbar-thumb-gray-400 scrollbar-thin" id="Home">
+    <header class=" mx-auto flex mt-8 justify-between font-sans" >
+      <div class="px-7 justify-between font-semibold flex w-full fixed mx-auto bg-white h-20 py-8 top-0 z-50">
+        <div>
+          <h1
+            class="text-md tracking-widest cursor-pointer transition font-bold hover:text-[#8d6e63]"
+          >
+            REY.DEV
+          </h1>
+        </div>
+
+        <div class="flex gap-4">
+        
+          <div class="group cursor-pointer transition-transform transform-gpu hover:scale-125">
+            <a href="#" onclick="openPopup()" class="">
+              <div class="bg-black h-0.5 w-5 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+              <div class="bg-black h-0.5 w-5 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+            </a>
+          </div>
+          
+        </div>
+
+        
+      </div>
+    </header>
+
+    <!-- The pop-up container -->
+    <div
+      id="popupContainer"
+      class="fixed top-0 left-0 w-full h-full bg-[#212121] flex hidden mx-auto z-50"
+    >
+      <div class="flex mt-8 justify-between w-full mx-auto ">
+        <div class="justify-between font-semibold flex w-full fixed mx-auto h-24 px-7 py-8 top-0">
+          <div>
+            <h1
+              id="text2" class="text-md tracking-widest cursor-pointer text-white transition font-bold hover:text-[#8d6e63]"
+            >
+              REY.DEV
+            </h1>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="cursor-pointer hover:text-[#8d6e63]">
+              <button class="" onclick="closePopup()">
+                <i
+                  class="text-white text-xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto mt-20">
+          <div class="inline-grid px-14 gap-6">
+            <a href="../pages/index.html" target="_blank"class="text-7xl text-gray-400 transition hover:text-white">Homepage</a>
+            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Portfolio</a>
+            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Contact</a>
+      
+          
+            <div class="grid  mt-16">
+          <div class="flex gap-4 ">
+            <h1 class="text-gray-500">Follow me on</h1>
+            <div class="text-md font-semibold space-x-2 text-white">
+              <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
+              <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
+              <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
+            </div>
+          </div>
+
+            <div class="justify-between flex ">
+              <div class="text-gray-500 mb-20">
+                <h1>© 2023. Reymark.dev. All rights reserved.</h1>
+                
+              </div>
+            
+            </div>
+        
+          </div>
+         
+        </div>
+
+        </div>
+        
+        
+      </div>
+
+   
+
+      
+    </div>
+
+    <!-- Hero Section -->
+  
+
+    <!-- Portfolio -->
+  
+   <section class="flex container mx-auto px-14">
+    <div class="grid grid-cols-2 gap-4 w-full">
+      <div class="grid gap-4">
+        <div class="justify-between flex w-full Reymark text-black mt-36" id="typing-container">
+          <div>
+            <p class="text-7xl scrollrevs">Check</p>
+            <h1 class="text-7xl mt-4 scrollrevs"><b>My</b> Portfolio<div class="bg-black w-10 h-1 mt-4"></div></h1>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg mt-56" src="../img/wonders.PNG" alt="">
+        <h1 class="text-gray-500 mt-10">Website</h1>
+        <h1 class="font-bold tracking-tighter mt-8 text-3xl">Wonders Gallery </h1>
+        <p class="mt-8 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quam culpa ea pariatur quas quaerat sunt, et itaque nulla atque nemo accusamus, voluptatum exercitationem laboriosam facilis quasi. Quas, ab suscipit.</p>
+        <div class="flex gap-4 font-bold mt-8">
+          <i class="fa-solid fa-tags text-lg"></i>
+          <h1>Tailwind,</h1>
+          <h1>Figma,</h1>
+          <h1>Laravel</h1>
+        </div>
+
+        <div class="flex gap-4 mt-8">
+          <div class="w-full h-10 border 2px border-gray-500 text-center mx-auto">
+            <h1>Code</h1>
+          </div>
+          <div class="w-full h-10 border 2px border-gray-500 text-center mx-auto">
+            <h1>Code</h1>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg mt-8" src="../img/food.PNG" alt="">
+        <h1>Food Recipe</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi, veniam quae quas molestiae consequuntur perferendis sequi repellat labore placeat impedit nihil deleniti possimus tempora qui? Iste repellendus alias expedita?</p>
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+      </div>
+    </div>
+    
+
+
+   </section>
+
+    <footer class="container w-full h-full mt-28 mx-auto font-sans px-14">
+      <div class="bg-gray-300  h-0.5 w-full mt-28 container mx-auto px-14">
+
+      </div>
+      <h1 class="text-6xl mt-28"><b>Contact</b> me!</h1>
+      <div class="mt-8">
+        <div class="text-lg font-semibold relative cursor-pointer group">Contact
+        <div class="bg-gray-300  h-0.5 w-20 mt-2 hover:bg-black transition hover:scale-105"></div>
+        </div>
+      </div>
+
+    
+
+
+      <div class="flex gap-4 mt-36">
+        <h1 class="text-gray-500">Follow me on</h1>
+        <div class="text-md font-semibold space-x-2">
+          <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
+          <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
+          <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
+        </div>
+        
+      </div>
+
+      <div class="justify-between flex">
+        <div class="text-gray-500 ">
+          <h1>© 2023. Reymark.dev. All rights reserved.</h1>
+          
+        </div>
+      
+      </div>
+    
+      
+    </footer>
+
+    <div class="justify-end flex px-7 mx-auto mb-20 scrollrevss">
+      <a href="#Home" class="tooltip ">
+        <i class="fa-solid fa-chevron-up  px-3 py-3 border-black border-2 cursor-pointer hover:scale-110 transition hover:text-[#8d6e63] hover:border-[#8d6e63]"></i>
+        <span class="tooltiptext font-semibold">Scroll to top</span>
+      </a>
+    </div>
+
+    <script src="../main.js"></script>
+    <script src="../scroll.js"></script>
+    <script src="../scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  </body>
+</html>
