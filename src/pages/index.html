@@ -115,13 +115,13 @@
     <section
       class="mx-auto container flex mt-8 w-full h-full px-14"
     >
-      <div class="justify-between flex w-full ">
+      <div class="justify-between lg:flex xl:flex w-full grid">
         <div class="Reymark text-black mt-36" id="typing-container">
           <div>
             <p class="tracking-widest font-semibold text-2xl scrollrevs"  >Hello! I'm</p>
             <div class="grid gap-4">
          
-              <h1 class="text-7xl mt-4 tracking-tighter scrollrevs" ><b>Reymark</b> Boquiron
+              <h1 class="text-7xl mt-4 tracking-tighter scrollrevs w-full" ><b>Reymark</b> Boquiron
                 <div class="bg-black w-10 h-1 mt-4"></div>
               </h1>
             </div>
@@ -161,69 +161,36 @@
     
           <img
             src="../img/reymark.jpg"
-            class="h-pic w-customs object-cover"
+            class="lg:h-pic xl:h-pic lg:w-customs xl:w-customs w-full h-full object-cover"
             alt=""
           />
          
-        <!-- <div class="inline-flex mt-12">
-          <ul class="grid items-center text-sm gap-4">
-            <li>
-              <a class="" href="/">
-                <i class="fa-brands fa-linkedin text-white transition text-lg px-3.5 py-1.5  hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
-              </a>
-            </li>
-            <li>
-              <a class="" href="/">
-                <i class="fab fa-facebook text-white transition text-lg px-3 py-1.5   hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
-              </a>
-            </li>
-            <li>
-              <a class="" href="/">
-                <i class="fab fa-instagram text-white transition text-lg px-3 py-1.5  hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
-              </a>
-            </li>
-            <li>
-              <a class="" href="/">
-                <i class="fab fa-github text-white transition text-lg px-3 py-1.5   hover:bg-black bg-gray-800 hover:text-white hover:scale-105"></i>
-              </a>
-            </li>
-          </ul>
-        </div> -->
+      
       </div>
       
     </section>
 
 
-    <!-- box -->
-    <section class="container mx-auto px-14 flex mt-28">
     
-      <div class="w-full h-52 border 1px border-gray-300 text-center">
-        <i class="fa-brands fa-figma text-6xl font-bold mx-auto mt-20 scrollrevss"></i>
-      </div>
-      <div class="w-full h-52 border 1px border-gray-300 text-center">
-        <img src="../img/xd.png" class="w-20 h-20 mx-auto mt-16 scrollrevss" alt="">
-      </div>
-      <div class="w-full h-52 border 1px border-gray-300 text-center">
-        <img src="../img/tailwind.png" class=" w-28 h-28 mx-auto mt-11 scrollrevss" alt="">
-      </div>
-      <div class="w-full h-52 border 1px border-gray-300 text-center">
-        <i class="fa-brands fa-laravel font-bold text-6xl mx-auto mt-20 scrollrevss"></i>
-      </div>
-    </section>
-
     <!-- About me -->
     <div id="About">
 
     </div>
     <section class="container mt-28 font-sans w-full h-full mx-auto px-14" >
+      
      
       <div class="flex relative" >
       
         <h1 class="text-5xl z-10 font-bold w-96">About Me</h1>
         <div class="w-full h-0.5 bg-gray-300 mt-6 "></div>
       </div>
-      <div class="justify-between flex gap-12">
-
+      <div class="justify-between lg:flex xl:flex grid gap-12">
+   <!-- Box 1 -->
+   <div class="w-full rightsroll">
+      
+    <img src="../img/table.jpg" class="w-full h-96 object-cover hover:scale-105  transition mt-16" alt="">
+  </div>   
+             
         <!-- Box 2 -->
         <div class="w-full h-full rounded-3xl mt-12 scrollrev">
           <div class=" text-black w-full">
@@ -231,28 +198,25 @@
 
                 <div class="flex gap-2">
                  
-                  <h1 class="text-2xl mt-2 font-semibold w-full">
+                  <h1 class="text-3xl mt-2 font-semibold w-full">
                     A dedicated Front-end web developer and UI/UX web designer
                   </h1>
       
                 </div>
            
           
-                  <p class="mt-8 text-md text-gray-600">
+                  <p class="mt-8 text-lg text-gray-600">
                     As a seasoned Frontend developer with a year of experience, I'm not only adept at crafting elegant UI/UX web designs but also specialize in modern, minimalist aesthetics. Hailing from the vibrant Philippines, my passion lies in seamlessly merging code with creativity to deliver exceptional digital experiences.
                   </p>
       
            
             
-            <div class="flex gap-2 mt-10 text-sm">
-              <i class="fa-solid fa-square text-xs mt-1"></i>
-              <p><b>My skills are:</b> HTML, CSS, Javascript, PHP, Laravel, Tailwind-CSS, Git & Github, Bootstrap, figma and Adobe XD</p>
-            </div>
+          
            
           </div>
 
-          <div class="gap-4 flex mt-12 ">
-            <button class="w-40 h-11 bg-black text-center cursor-pointer text-white border-2 border-black hover:bg-white hover:text-black transition">
+          <div class="gap-4 flex mt-10 ">
+            <button class="w-full h-11 bg-black text-center cursor-pointer text-white border-2 border-black hover:bg-white hover:text-black transition">
               Contact Me
             </button>
         
@@ -266,21 +230,64 @@
           
         </div>
 
-         <!-- Box 1 -->
- <div class="w-full rightsroll">
       
-  <img src="../img/table.jpg" class="w-full h-96 object-cover hover:scale-105  transition mt-16" alt="">
-</div>   
-           
       </div>
     </section>
 
    
+   <!-- skill -->
+   <section class="container mx-auto px-14 mt-28">
 
+    <div class="flex relative" >
+      
+      <h1 class="text-5xl z-10 font-bold w-96">Skills</h1>
+      <div class="w-full h-0.5 bg-gray-300 mt-6 "></div>
+    </div>
+    <div class=" mt-16 grid grid-cols-3 gap-2 cursor-pointer">
+
+      <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+     
+        <i class="fa-brands fa-html5 text-lg font-bold  mt-0.5"></i>
+        <h1 class="font-semibold mt-0.5">HTML</h1>
+        
+    </div>
+    <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+      <i class="fa-brands fa-css3-alt text-lg font-bold  mt-0.5"></i>
+      <h1 class="font-semibold mt-0.5">CSS</h1>
+  </div>
+  <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+    <i class="fa-brands fa-square-js text-lg font-bold  mt-0.5"></i>
+    <h1 class="font-semibold mt-0.5">Javascript</h1>
+</div>
+<div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+  <i class="fa-solid fa-code text-lg font-bold  mt-0.5"></i>
+  <h1 class="font-semibold mt-0.5">PHP</h1>
+</div>
+      <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+        <i class="fa-solid fa-crop-simple text-lg font-bold  mt-0.5"></i>
+        <h1 class="font-semibold mt-0.5">Tailwind</h1>
+    </div>
+    <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+      <i class="fa-brands fa-laravel text-lg font-bold  mt-0.5"></i>
+      <h1 class="font-semibold mt-0.5">Laravel</h1>
+  </div>
+      <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+          <i class="fa-brands fa-figma text-lg font-bold  mt-0.5"></i>
+          <h1 class="font-semibold mt-0.5">Figma</h1>
+      </div>
+      <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
+        <i class="fa-solid fa-palette  text-lg font-bold  mt-0.5"></i>
+        <h1 class="font-semibold mt-0.5">Adobe XD</h1>
+    </div>
+      
+      
+    </div>
+    
+  </section>
 
     <!-- Services -->
     
-    <section class="w-full h-custom bg-[#212121] mt-28">
+    <section class="w-full h-bg lg:h-custom xl:h-custom bg-[#212121] mt-28">
       <div class="container px-14 mx-auto">
         <div class="flex container gap-2">
           
@@ -289,8 +296,8 @@
          
         </div>
         <p class="text-gray-400 mt-4">Why is it worth using my services?</p>
-        <div class="flex mt-20 justify-between gap-16 w-full">
-          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border 1px scrollrevss">
+        <div class="lg:flex xl:flex grid mt-20 justify-between lg:gap-16 xl:gap-16 gap-4 w-full">
+          <div class=" w-full h-86 mx-auto justify-center p-6 border-gray-400 border-2 scrollrevss">
         
             <i class="fa-solid fa-pen-nib mx-auto  text-white text-xl "></i>
             <h1 class="mt-8 text-xl text-white font-bold ">Web Designing</h1>
@@ -299,7 +306,7 @@
           
           </div>
 
-          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border 1px scrollrevss">
+          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border-2 scrollrevss">
            
             <i class="fa-solid fa-laptop-code mx-auto  text-white text-xl "></i>
             <h1 class="mt-8 text-xl text-white font-bold ">Web Development</h1>
@@ -307,9 +314,9 @@
        
           
           </div>
-          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border 1px scrollrevss">
+          <div class="w-full h-86 mx-auto justify-center p-6 border-gray-400 border-2 scrollrevss">
             
-            <i class="fa-solid fa-object-ungroup mx-auto text-white text-xl "></i>
+            <i class="fa-solid fa-palette mx-auto text-white text-xl "></i>
             <h1 class="mt-8 text-xl text-white font-bold ">Graphic Designing</h1>
             <p class="mt-8  w-full text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis animi neque quis porro doloremque rerum odit enim.</p>
        
