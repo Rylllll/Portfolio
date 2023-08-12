@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="../dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../input.css" />
+    <link rel="stylesheet" href="./input.css" />
   </head>
 
  <style>
@@ -22,7 +22,7 @@
  </style>
   <body class="font-sans scrollbar-thumb-gray-400 scrollbar-thin" id="Home">
     <header class=" mx-auto flex mt-8 justify-between" >
-      <div class="px-7 justify-between font-semibold flex w-full fixed mx-auto bg-white h-20 py-8 top-0 z-50">
+      <div class="lg:px-7 xl:px-7 px-4 justify-between font-semibold flex w-full fixed mx-auto bg-white h-20 py-8 top-0 z-50">
         <div>
           <h1
             class="text-md tracking-widest cursor-pointer transition font-bold hover:text-[#8d6e63]"
@@ -113,38 +113,38 @@
 
     <!-- Hero Section -->
     <section
-      class="mx-auto container flex mt-8 w-full h-full px-14"
+      class="mx-auto container flex mt-8 w-full h-full lg:px-14 xl:px-14 px-4"
     >
       <div class="justify-between lg:flex xl:flex w-full grid">
-        <div class="Reymark text-black mt-36" id="typing-container">
+        <div class="Reymark text-black lg:mt-36 xl:mt-36 mt-16 lg:w-3/4 xl:w-3/4 sm:w-full" id="typing-container">
           <div>
-            <p class="tracking-widest font-semibold text-2xl scrollrevs"  >Hello! I'm</p>
+            <p class="tracking-widest font-semibold lg:text-2xl xl:text-2xl text-xl scrollrevs"  >Hello! I'm</p>
             <div class="grid gap-4">
          
-              <h1 class="text-7xl mt-4 tracking-tighter scrollrevs w-full" ><b>Reymark</b> Boquiron
+              <h1 class="lg:text-7xl xl:text-7xl text-6xl mt-4 tracking-tighter scrollrevs w-full" ><b>Reymark</b> Boquiron
                 <div class="bg-black w-10 h-1 mt-4"></div>
               </h1>
             </div>
            
            
-            <div class="flex gap-4">
+           
+          </div>
+          <div class="flex gap-4">
               
     
           
-              <p class="mt-16 text-md text-gray-600 scrollrevs">  
-                I specialize in creating responsive and user-friendly <br> websites as a  Front-end Web Developer and UI/UX <br>Web Designer. My expertise lies in crafting engaging <br>and visually appealing online experiences for users.
-              </p>
-      
-           
-      
-        </div>
-
-          </div>
+            <p class="lg:mt-16 xl:mt-16 mt-8 text-md text-gray-600 scrollrevs w-full lg:w-3/4 xl:w-3/4">  
+              I specialize in creating responsive and user-friendly websites as a  Front-end Web Developer and UI/UX Web Designer. My expertise lies in crafting engaging and visually appealing online experiences for users.
+            </p>
+    
+         
+    
+      </div>
 
           <div class="flex gap-4 scrollrevs">
 
      
-            <a href="#About" class="overflow-hidden cursor-pointer w-80 h-11 mt-16 flex transition relative">
+            <a href="#About" class="overflow-hidden cursor-pointer w-80 h-11 lg:mt-16 xl:mt-16 mt-10 flex transition relative">
               
               <div class="px-4 py-2 text-xs bg-black ">
                
@@ -157,11 +157,12 @@
        
         </div>
       </div>
-      <div class="mt-12 flex items-center gap-8 scrollrevs">
+      <div class="mt-12 flex items-center gap-8 scrollrevs w-full lg:w-96 xl:w-96 md:w-full ">
     
           <img
             src="./img/reymark.jpg"
-            class="lg:h-pic xl:h-pic lg:w-customs xl:w-customs w-full h-full object-cover"
+            
+            class="w-full lg:h-pic xl:h-pic lg:w-customs xl:w-customs h-full lg:object-cover xl:object-cover hover:scale-105  transition"
             alt=""
           />
          
@@ -176,36 +177,36 @@
     <div id="About">
 
     </div>
-    <section class="container mt-28 font-sans w-full h-full mx-auto px-14" >
+    <section class="container mt-28 font-sans w-full h-full mx-auto lg:px-14 xl:px-14 px-4" >
       
      
       <div class="flex relative" >
       
-        <h1 class="text-5xl z-10 font-bold w-96">About Me</h1>
-        <div class="w-full h-0.5 bg-gray-300 mt-6 "></div>
+        <h1 class="lg:text-5xl xl:text-5xl text-3xl z-10 font-bold w-96">About Me</h1>
+        <div class="w-full h-0.5 bg-gray-300 md:mt-6 lg:mt-6 xl:mt-6 mt-4"></div>
       </div>
       <div class="justify-between lg:flex xl:flex grid gap-12">
    <!-- Box 1 -->
    <div class="w-full rightsroll">
       
-    <img src="./img/table.jpg" class="w-full lg:h-96 xl:h-96 h-full lg:object-cover xl:object-cover hover:scale-105  transition mt-16" alt="">
+    <img src="./img/table.jpg" class="w-full lg:h-96 xl:h-96 h-96 object-cover lg:object-cover xl:object-cover hover:scale-105  transition mt-16" alt="">
   </div>   
              
         <!-- Box 2 -->
-        <div class="w-full h-full rounded-3xl mt-12 scrollrev">
+        <div class="w-full h-full rounded-3xl lg:mt-12 xl:mt-12 sm:mt-4 scrollrev">
           <div class=" text-black w-full">
             
 
                 <div class="flex gap-2">
                  
-                  <h1 class="text-3xl mt-2 font-semibold w-full">
+                  <h1 class="lg:text-3xl xl:text-3xl text-xl mt-2 font-semibold w-full">
                     A dedicated Front-end web developer and UI/UX web designer
                   </h1>
       
                 </div>
            
           
-                  <p class="mt-8 lg:text-lg xl:text-lg text-md text-gray-600">
+                  <p class="mt-8 lg:text-lg xl:text-lg sm:text-sm md:text-md text-gray-600">
                     As a seasoned Frontend developer with a year of experience, I'm not only adept at crafting elegant UI/UX web designs but also specialize in modern, minimalist aesthetics. Hailing from the vibrant Philippines, my passion lies in seamlessly merging code with creativity to deliver exceptional digital experiences.
                   </p>
       
@@ -236,14 +237,14 @@
 
    
    <!-- skill -->
-   <section class="container mx-auto px-14 mt-28">
+   <section class="container mx-auto lg:px-14 xl:px-14 px-4 mt-28">
 
-    <div class="flex relative" >
+    <div class="flex relative " >
       
-      <h1 class="text-5xl z-10 font-bold w-96">Skills</h1>
-      <div class="w-full h-0.5 bg-gray-300 mt-6 "></div>
+      <h1 class="lg:text-5xl xl:text-5xl text-3xl z-10 font-bold w-96 ">My Skills</h1>
+      <div class="w-full h-0.5 bg-gray-300 md:mt-6 lg:mt-6 xl:mt-6 mt-4"></div>
     </div>
-    <div class=" mt-16 grid grid-cols-3 gap-2 cursor-pointer">
+    <div class=" mt-16 grid lg:grid-cols-3 md:grid-cols-3 xl:grid-cols-3 grid-cols-2 gap-2 cursor-pointer">
 
       <div class="scrollrevs w-full h-12 p-2 gap-2 flex shadow-md border-2 border-black hover:bg-black hover:text-white transition">
      
@@ -287,12 +288,12 @@
 
     <!-- Services -->
     
-    <section class="w-full h-bg lg:h-custom xl:h-custom bg-[#212121] mt-28">
-      <div class="container px-14 mx-auto">
+    <section class="w-full h-auto sm:h-bg lg:h-custom xl:h-custom bg-[#212121] mt-28">
+      <div class="container lg:px-14 xl:px-14 px-4 mx-auto">
         <div class="flex container gap-2">
           
-          <h1 class="text-5xl z-10 font-bold w-96 text-white mt-16">Services</h1>
-          <div class="w-full h-0.5 bg-gray-300 mt-18"></div>
+          <h1 class="lg:text-5xl xl:text-5xl text-3xl z-10 font-bold w-96 text-white mt-16">Services</h1>
+          <div class="w-full h-0.5 bg-gray-300 md:mt-18 lg:mt-18 xl:mt-18 mt-17"></div>
          
         </div>
         <p class="text-gray-400 mt-4">Why is it worth using my services?</p>
@@ -328,13 +329,13 @@
 
     </section>
 
-    <footer class="container w-full h-full mt-28 mx-auto font-sans px-14">
-      <div class="bg-gray-300  h-0.5 w-full mt-28 container mx-auto px-14">
+    <footer class="container w-full h-full mt-28 mx-auto font-sans lg:px-14 xl:px-14 px-4">
+      <div class="bg-gray-300  h-0.5 w-full mt-28 container mx-auto  lg:px-14 xl:px-14 px-4">
 
       </div>
-      <h1 class="text-6xl mt-28"><b>Contact</b> me!</h1>
+      <h1 class="md:text-6xl lg:text-6xl xl:text-6xl text-5xl mt-28"><b>Contact</b> me!</h1>
       <div class="mt-8">
-        <div class="text-lg font-semibold relative cursor-pointer group">Contact
+        <div class="md:text-lg lg:text-lg xl:text-lg text-md font-semibold relative cursor-pointer group">Contact
         <div class="bg-gray-300  h-0.5 w-20 mt-2 hover:bg-black transition hover:scale-105"></div>
         </div>
       </div>
@@ -342,7 +343,7 @@
     
 
 
-      <div class="flex gap-4 mt-36">
+      <div class="flex gap-4 mt-36 md:text-md lg:text-md xl:text-md text-sm">
         <h1 class="text-gray-500">Follow me on</h1>
         <div class="text-md font-semibold space-x-2">
           <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
