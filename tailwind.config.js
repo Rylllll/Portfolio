@@ -16,6 +16,7 @@ module.exports = {
       'custom': '600px',
       'customs': '550px',
       'bg': '1000px',
+      'about': '400px',
   
     },
     width:{

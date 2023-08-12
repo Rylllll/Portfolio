@@ -730,12 +730,24 @@ video {
   height: auto;
 }
 
+.h-bg {
+  height: 1000px;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-bg {
-  height: 1000px;
+.h-about {
+  height: 400px;
+}
+
+.h-pic {
+  height: 520px;
+}
+
+.h-customs {
+  height: 550px;
 }
 
 .w-10 {
@@ -1257,6 +1269,10 @@ video {
     display: flex;
   }
 
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
   .lg\:h-custom {
     height: 600px;
   }
@@ -1272,11 +1288,25 @@ video {
   .lg\:gap-16 {
     gap: 4rem;
   }
+
+  .lg\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:h-96 {
+    height: 24rem;
   }
 
   .xl\:h-custom {
@@ -1293,6 +1323,16 @@ video {
 
   .xl\:gap-16 {
     gap: 4rem;
+  }
+
+  .xl\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
