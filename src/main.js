@@ -35,7 +35,7 @@ function closePopup() {
         // For example:
         // window.location.href = 'your_target_page.html';
       }
-    }, 20); // Adjust the interval for smoother animation
+    }, 10); // Adjust the interval for smoother animation
   });
   
   $(window).on('load', function() {
@@ -53,6 +53,6 @@ function closePopup() {
           $('.Loading_screen').fadeOut();
         }, 500); // Add a slight delay before fading out
       }
-    }, 20); // Adjust the interval for smoother animation
+    }, 10); // Adjust the interval for smoother animation
   });
   
