@@ -56,3 +56,4 @@ function closePopup() {
     }, 10); // Adjust the interval for smoother animation
   });
   
+ 
