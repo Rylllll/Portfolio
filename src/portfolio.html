@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryll.dev</title>
+    <link rel="icon" href="./img/favicon.png" class="rounded-full" type="image/png">
     <script
       src="https://kit.fontawesome.com/730a8ae355.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../input.css" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./input.css" />
   </head>
 
  <style>
@@ -21,8 +22,10 @@
   }
  </style>
   <body class=" scrollbar-thumb-gray-400 scrollbar-thin" id="Home">
-    <header class=" mx-auto flex mt-8 justify-between font-sans" >
-      <div class="px-7 justify-between font-semibold flex w-full fixed mx-auto bg-white h-20 py-8 top-0 z-50">
+    
+    <header class=" mx-auto flex mt-8 justify-between" >
+      
+      <div class="lg:px-7 xl:px-7 px-4 justify-between font-semibold flex w-full fixed mx-auto bg-white h-20 py-8 top-0 z-10">
         <div>
           <h1
             class="text-md tracking-widest cursor-pointer transition font-bold hover:text-[#8d6e63]"
@@ -45,212 +48,225 @@
         
       </div>
     </header>
+ <!-- Progress bar only, no loading screen -->
+ <div class="absolute top-0 left-0 w-full bg-gray-300 z-20">
+  <div class="h-1 bg-black" id="progress-bar"></div>
+</div>
 
     <!-- The pop-up container -->
     <div
-      id="popupContainer"
-      class="fixed top-0 left-0 w-full h-full bg-[#212121] flex hidden mx-auto z-50"
-    >
-      <div class="flex mt-8 justify-between w-full mx-auto ">
-        <div class="justify-between font-semibold flex w-full fixed mx-auto h-24 px-7 py-8 top-0">
-          <div>
-            <h1
-              id="text2" class="text-md tracking-widest cursor-pointer text-white transition font-bold hover:text-[#8d6e63]"
-            >
-              REY.DEV
-            </h1>
-          </div>
-
-          <div class="flex gap-6">
-            <div class="cursor-pointer hover:text-[#8d6e63]">
-              <button class="" onclick="closePopup()">
-                <i
-                  class="text-white text-xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"
-                ></i>
-              </button>
-            </div>
-          </div>
+    id="popupContainer"
+    class="fixed top-0 left-0 w-full h-full bg-[#131212] flex hidden mx-auto z-50 transition"
+  >
+  <div class="absolute top-0 left-0 w-full bg-gray-300 z-20">
+    <div class="h-1 bg-[#8d6e63]" id="progress-bar"></div>
+  </div>
+    <div class="flex mt-8 justify-between w-full mx-auto ">
+      <div class="justify-between font-semibold flex w-full fixed mx-auto h-24 py-8 top-0 lg:px-7 xl:px-7 px-4">
+        <div>
+          <h1
+            id="text2" class="text-md tracking-widest cursor-pointer text-white transition font-bold hover:text-[#8d6e63]"
+          >
+            REY.DEV
+          </h1>
         </div>
 
-        <div class="container mx-auto mt-20">
-          <div class="inline-grid px-14 gap-6">
-            <a href="../pages/index.html" target="_blank"class="text-7xl text-gray-400 transition hover:text-white">Homepage</a>
-            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Portfolio</a>
-            <a href="" class="text-7xl text-gray-400 transition hover:text-white">Contact</a>
-      
+        <div class="flex gap-6">
+          <div class="cursor-pointer hover:text-[#8d6e63]">
+            <button class="" onclick="closePopup()">
+              <i
+                class="text-white text-xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"
+              ></i>
+            </button>
+          </div>
+
           
-            <div class="grid  mt-16">
-          <div class="flex gap-4 ">
-            <h1 class="text-gray-500">Follow me on</h1>
-            <div class="text-md font-semibold space-x-2 text-white">
-              <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
-              <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
-              <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
-            </div>
-          </div>
+        </div>
+      </div>
 
-            <div class="justify-between flex ">
-              <div class="text-gray-500 mb-20">
-                <h1>© 2023. Reymark.dev. All rights reserved.</h1>
-                
-              </div>
-            
-            </div>
+      <div class="container mx-auto mt-20 flex ">
+        <div class="inline-grid lg:px-14 xl:px-14 px-4 gap-6">
+          <a href="https://rylllll.github.io/Portfolio/src/" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Homepage</a>
+          <a href="/src/portfolio.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Portfolio</a>
+          <a href="../pages/portfolio.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Resume</a>
+          <a href="./contact.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-white">Contact</a>
+          
         
+        
+          <div class="grid  mt-16">
+        <div class="md:flex lg:flex xl:flex grid gap-4  md:text-md lg:text-md xl:text-md ">
+          <h1 class="text-gray-500">Follow me on</h1>
+          <div class="md:flex lg:flex xl:flex grid font-semibold gap-2 text-white">
+            <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
+            <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
+            <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
           </div>
-         
         </div>
 
+          <div class="justify-between flex md:mt-0 lg:mt-0 xl:mt-0 mt-4">
+            <div class="text-gray-500 mb-20 md:flex lg:flex xl:flex grid md:gap-1 lg:gap-1 xl:gap-1 gap-0">
+              <h1>© 2023. Reymark.dev</h1>
+              <h1>All rights reserved.</h1>
+            </div>
+          
+          </div>
+      
         </div>
-        
+       
+      </div>
+
+      <div class=" mx-auto justify-center mt-36 md:block lg:block xl:block hidden">
+        <p class="text-gray-400">
+          Web design is the art of weaving digital dreams into vibrant realities. Each pixel is meticulously placed, every line of code an elegant stroke on the canvas of the virtual world. 
+        </p>
+
+        <div class="mt-6 ">
+          <div class="transition border-b-2 border-gray-300 w-24 cursor-pointer lg:mt-6 xl:mt-6 mt-10 hover:border-[#8d6e63]">
+            <h1 class="font-bold mb-1 text-white">Services</h1>
+          </div>
+        </div>
+      
         
       </div>
 
-   
-
+      </div>
+      
       
     </div>
 
+ 
+
+    
+  </div>
     <!-- Hero Section -->
   
 
     <!-- Portfolio -->
   
    <section class="flex container mx-auto px-14">
-    <div class="grid grid-cols-2 gap-28 w-full">
+    <div class=" gap-28 w-full">
       <div class="justify-between flex w-full Reymark text-black mt-36" id="typing-container">
         <div>
           <p class="text-7xl scrollrevs">Check</p>
-          <h1 class="text-7xl mt-4 scrollrevs"><b>My</b> Portfolio<div class="bg-black w-10 h-1 mt-4"></div></h1>
+          <h1 class="text-7xl mt-4 scrollrevs"><b>My</b> Portfolio<div class="bg-black w-14 h-1.5 mt-4"></div></h1>
         </div>
       </div>
-      <div class="grid gap-4">
-        
-      </div>
-      <div class="px-7">
-        <img class="h-auto max-w-full rounded-lg mt-28" src="../img/wonders.PNG" alt="">
-        <h1 class="text-gray-500 mt-10">Website</h1>
-        <h1 class="font-bold tracking-tighter mt-6 text-3xl">Wonders Gallery </h1>
-        <p class="mt-6 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quam culpa ea pariatur quas quaerat sunt, et itaque nulla atque nemo accusamus, voluptatum exercitationem laboriosam facilis quasi. Quas, ab suscipit.</p>
-        <div class="flex gap-4 font-bold mt-8">
-          <i class="fa-solid fa-tags text-lg"></i>
+     <div class="md:flex lg:flex xl:flex grid md:gap-32 lg:gap-32 xl:gap-32 gap-10 justify-between">
+      <div class="">
+        <img class="h-auto w-full mt-28" src="./img/wonders.PNG" alt="">
+        <div class="flex gap-2 text-gray-500 md:text-lg lg:text-lg xl:text-lg text-sm mt-10">
+          <div class="bg-gray-500 h-0.5 w-5 mt-3 "></div>
+          <h1 class="">Web Application,</h1>
           <h1>Tailwind,</h1>
           <h1>Figma,</h1>
           <h1>Laravel</h1>
         </div>
+     
 
-        <div class="flex gap-4 mt-8 ">
-          <div class="w-full h-10 border-2 border-black text-center mx-auto hover:bg-black hover:text-white transition">
-            <div class="flex mx-auto justify-center mt-2 gap-2 cursor-pointer">
-              <h1 class="font-bold">Code</h1>
-              <i class="fa-brands fa-github mt-1"></i>
+        <h1 class="font-bold tracking-tighter mt-6 text-2xl">Wonders Gallery </h1>
+        <p class="mt-6 text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quam culpa ea pariatur quas quaerat sunt, et itaque nulla atque nemo accusamus, voluptatum exercitationem laboriosam facilis quasi. Quas, ab suscipit.</p>
+       
+        <div class="flex md:mt-2 lg:mt-2 xl:mt-2 mt-0">
+         
+          <div class="h-10 transition">
+            <div class="transition border-b-2 border-black w-32 cursor-pointer lg:mt-6 xl:mt-6 mt-10 hover:border-[#8d6e63]">
+              <h1 class="font-bold mb-1 text-md">Live demo</h1>
             </div>
            
           </div>
-          <div class="w-full h-10 border-2 border-black text-center mx-auto hover:bg-black hover:text-white transition cursor-pointer ">
-            <div class="flex mx-auto justify-center mt-2 gap-2">
-              <h1 class="font-bold">Live demo</h1>
-              <i class="fa-solid fa-up-right-from-square mt-1"></i>
-            </div>
-           
-          </div>
-
-        </div>
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg " src="../img/food.PNG" alt="">
-        <h1 class="text-gray-500 mt-10">Website</h1>
-        <h1 class="font-bold tracking-tighter mt-8 text-3xl">Wonders Gallery </h1>
-        <p class="mt-8 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quam culpa ea pariatur quas quaerat sunt, et itaque nulla atque nemo accusamus, voluptatum exercitationem laboriosam facilis quasi. Quas, ab suscipit.</p>
-        <div class="flex gap-4 font-bold mt-8">
-          <i class="fa-solid fa-tags text-lg"></i>
-          <h1>Tailwind,</h1>
-          <h1>Figma,</h1>
-          <h1>Laravel</h1>
-        </div>
-
-        <div class="flex gap-4 mt-8">
-          <div class="w-full h-10 border 2px border-gray-500 text-center mx-auto ">
-            <div class="flex mx-auto justify-center mt-2 gap-2">
-              <h1 class="">Code</h1>
-              <i class="fa-brands fa-github mt-1"></i>
-            </div>
-           
-          </div>
-          <div class="w-full h-10 border 2px border-gray-500 text-center mx-auto ">
-            <div class="flex mx-auto justify-center mt-2 gap-2">
-              <h1 class="">Live demo</h1>
-              <i class="fa-solid fa-up-right-from-square mt-1"></i>
-            </div>
            
           </div>
 
         </div>
+        <div class="">
+          <img class="h-auto w-full  mt-28" src="./img/food.PNG" alt="">
+          <div class="flex gap-2 text-gray-500 mt-10 md:text-lg lg:text-lg xl:text-lg text-sm">
+            <div class="bg-gray-500 h-0.5 w-5 mt-3 "></div>
+            <h1 class="">Website,</h1>
+            <h1>Tailwind,</h1>
+            <h1>Figma,</h1>
+          </div>
+       
+  
+          <h1 class="font-bold tracking-tighter mt-6 text-2xl">Food Recipe </h1>
+          <p class="mt-6 text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quam culpa ea pariatur quas quaerat sunt, et itaque nulla atque nemo accusamus, voluptatum exercitationem laboriosam facilis quasi. Quas, ab suscipit.</p>
+         
+          <div class="flex md:mt-2 lg:mt-2 xl:mt-2 mt-0">
+           
+            <div class="h-10   transition">
+              <div class="transition border-b-2 border-black w-32 cursor-pointer lg:mt-6 xl:mt-6 mt-10 hover:border-[#8d6e63]">
+                <h1 class="font-bold mb-1 text-md">Live demo</h1>
+              </div>
+             
+            </div>
+             
+            </div>
+  
+          </div>
+     </div>
+      
       </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-      </div>
-    </div>
+    
+    
+   
+     
+     
+   
     
 
 
    </section>
 
-    <footer class="container w-full h-full mt-28 mx-auto font-sans px-14">
-      <div class="bg-gray-300  h-0.5 w-full mt-28 container mx-auto px-14">
+   <footer class="container w-full h-full mt-28 mx-auto font-sans lg:px-14 xl:px-14 px-4">
+    <div class="bg-gray-300  h-0.5 w-full mt-28 container mx-auto  lg:px-14 xl:px-14 px-4">
 
-      </div>
-      <h1 class="text-6xl mt-28"><b>Contact</b> me!</h1>
-      <div class="mt-8">
-        <div class="text-lg font-semibold relative cursor-pointer group">Contact
-        <div class="bg-gray-300  h-0.5 w-20 mt-2 hover:bg-black transition hover:scale-105"></div>
-        </div>
-      </div>
-
+    </div>
+   
     
-
-
-      <div class="flex gap-4 mt-36">
-        <h1 class="text-gray-500">Follow me on</h1>
-        <div class="text-md font-semibold space-x-2">
-          <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
-          <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
-          <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
-        </div>
-        
-      </div>
-
-      <div class="justify-between flex">
-        <div class="text-gray-500 ">
-          <h1>© 2023. Reymark.dev. All rights reserved.</h1>
-          
-        </div>
+    <h1 class="md:text-7xl lg:text-7xl xl:text-7xl text-6xl mt-28"><b>Contact</b> me!</h1>
+    <div class="mt-8">
       
+      <div class="transition border-b-2 border-gray-300 w-24 cursor-pointer lg:mt-6 xl:mt-6 mt-10 hover:border-[#8d6e63]">
+        <h1 class="font-bold mb-1">Contact</h1>
       </div>
-    
-      
-    </footer>
-
-    <div class="justify-end flex px-7 mx-auto mb-20 scrollrevss">
-      <a href="#Home" class="tooltip ">
-        <i class="fa-solid fa-chevron-up  px-3 py-3 border-black border-2 cursor-pointer hover:scale-110 transition hover:text-[#8d6e63] hover:border-[#8d6e63]"></i>
-        <span class="tooltiptext font-semibold">Scroll to top</span>
-      </a>
     </div>
 
-    <script src="../main.js"></script>
-    <script src="../scroll.js"></script>
-    <script src="../scrollreveal.min.js"></script>
+  
+
+
+    <div class="md:flex lg:flex xl:flex grid gap-4 mt-36 md:text-md lg:text-md xl:text-md">
+      <h1 class="text-gray-500">Follow me on</h1>
+      <div class="md:flex lg:flex xl:flex grid font-semibold gap-2">
+        <a href="" class="hover:text-[#8d6e63] transition ">Facebook</a>
+        <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
+        <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
+      </div>
+      
+    </div>
+
+    <div class="justify-between flex md:mt-0 lg:mt-0 xl:mt-0 mt-4">
+      <div class="text-gray-500 md:flex lg:flex xl:flex grid md:gap-1 lg:gap-1 xl:gap-1 gap-0">
+        <h1>© 2023. Reymark.dev</h1>
+        <h1>All rights reserved.</h1>
+        
+      </div>
+    
+    </div>
+  
+    
+  </footer>
+
+  <div class="justify-end flex px-7 mx-auto mb-20 scrollrevss">
+    <a href="#Home" class="tooltip ">
+      <i class="fa-solid fa-chevron-up  px-3 py-3 border-black border-2 cursor-pointer hover:scale-110 transition hover:text-[#8d6e63] hover:border-[#8d6e63]"></i>
+      <span class="tooltiptext font-semibold">Scroll to top</span>
+    </a>
+  </div>
+
+    <script src="./main.js"></script>
+    <script src="./scroll.js"></script>
+    <script src="./scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script> 
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   </body>
 </html>
