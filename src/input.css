@@ -72,3 +72,15 @@
     animation: right-move 4s cubic-bezier(0.42, 0, 0.58, 1) infinite; /* Adjust the animation duration and bezier values as needed */
   }
 
+  .swal2-popup {
+    border-radius: 0; /* Remove rounded edges */
+    background-color: white;
+    color: black;
+}
+.swal2-confirm {
+  border-radius: 0;
+  background-color: black !important; /* Change "OK" button color */
+  color: white !important;
+  border: none;
+}
+

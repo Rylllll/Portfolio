@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./img/favicon.png" class="rounded-full" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryll.dev</title>
+    <script
+      src="https://kit.fontawesome.com/730a8ae355.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+
+ <style>
+  html{
+
+    scroll-behavior: smooth;
+  }
+ </style>
+  <body class="font-sans scrollbar-thumb-gray-400 scrollbar-thin" id="Home">
+ 
+    <header class=" mx-auto flex mt-8 justify-between" >
+      
+      <div class="lg:px-7 xl:px-7 px-4 justify-between font-semibold flex w-full fixed mx-auto bg-white h-20 py-8 top-0 z-10">
+        <a href="https://rylllll.github.io/Portfolio/src/">
+          <h1
+            class="text-md tracking-widest cursor-pointer transition font-bold hover:text-[#8d6e63]"
+          >
+            REY.DEV
+          </h1>
+        </a>
+
+        <div class="flex gap-4">
+        
+          <div class="group cursor-pointer transition-transform transform-gpu hover:scale-125">
+            <a href="#" onclick="openPopup()" class="">
+              <div class="bg-black h-0.5 w-5 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+              <div class="bg-black h-0.5 w-5 mt-1.5 group-hover:bg-[#8d6e63]"></div>
+            </a>
+          </div>
+          
+        </div>
+
+        
+      </div>
+    </header>
+ 
+      <!-- Progress bar only, no loading screen -->
+      <div class="absolute top-0 left-0 w-full bg-gray-300 z-20">
+        <div class="h-1 bg-black" id="progress-bar"></div>
+      </div>
+  
+    <!-- The pop-up container -->
+    <div
+      id="popupContainer"
+      class="fixed top-0 left-0 w-full h-full bg-[#131212] flex hidden mx-auto z-50 transition"
+    >
+    <div class="absolute top-0 left-0 w-full bg-gray-300 z-20">
+      <div class="h-1 bg-[#8d6e63]" id="progress-bar"></div>
+    </div>
+      <div class="flex mt-8 justify-between w-full mx-auto ">
+        <div class="justify-between font-semibold flex w-full fixed mx-auto h-24 py-8 top-0 lg:px-7 xl:px-7 px-4">
+          <div>
+            <h1
+              id="text2" class="text-md tracking-widest cursor-pointer text-white transition font-bold hover:text-[#8d6e63]"
+            >
+              REY.DEV
+            </h1>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="cursor-pointer hover:text-[#8d6e63]">
+              <button class="" onclick="closePopup()">
+                <i
+                  class="text-white text-xl cursor-pointer transition-transform transform-gpu hover:scale-125 hover:text-[#8d6e63] text-md fa-solid fa-times"
+                ></i>
+              </button>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <div class="container mx-auto mt-20 flex ">
+          <div class="inline-grid lg:px-14 xl:px-14 px-4 gap-6">
+            <a href="https://rylllll.github.io/Portfolio/src/" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Homepage</a>
+            <a href="https://rylllll.github.io/Portfolio/src/portfolio.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Portfolio</a>
+            <a href="https://rylllll.github.io/Portfolio/src/resume.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-white">Resume</a>
+            <a href="https://rylllll.github.io/Portfolio/src/contact.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Contact</a>
+            
+          
+          
+            <div class="grid  mt-16">
+          <div class="md:flex lg:flex xl:flex grid gap-4  md:text-md lg:text-md xl:text-md ">
+            <h1 class="text-gray-500">Follow me on</h1>
+            <div class="md:flex lg:flex xl:flex grid font-semibold gap-2 text-white">
+              <a href="" class="hover:text-[#8d6e63] transition">Facebook</a>
+              <a href="" class="hover:text-[#8d6e63] transition">Instagram</a>
+              <a href="" class="hover:text-[#8d6e63] transition">Linkedin</a>
+            </div>
+          </div>
+
+          <div class="justify-between flex md:mt-0 lg:mt-0 xl:mt-0 mt-4">
+            <div class="text-gray-500 mb-20 md:flex lg:flex xl:flex flex md:gap-1 lg:gap-1 xl:gap-1 gap-1">
+              <h1>© 2023. Reymark.dev</h1>
+              <h1>All rights reserved.</h1>
+            </div>
+          
+          </div>
+        
+          </div>
+         
+        </div>
+
+        <div class=" mx-auto justify-center mt-36 md:block lg:block xl:block hidden">
+          <p class="text-gray-400">
+            Web design is the art of weaving digital dreams into vibrant realities. Each pixel is meticulously placed, every line of code an elegant stroke on the canvas of the virtual world. 
+          </p>
+
+          <div class="mt-6 ">
+            <div class="transition border-b-2 border-gray-300 w-24 cursor-pointer lg:mt-6 xl:mt-6 mt-10 hover:border-[#8d6e63]">
+              <h1 class="font-bold mb-1 text-white">Services</h1>
+            </div>
+          </div>
+        
+          
+        </div>
+
+        </div>
+        
+        
+      </div>
+
+   
+
+      
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="mx-auto container flex mt-20 w-full h-full lg:px-14 xl:px-14 px-4"
+    >
+    <img src="./img/resume.jpg" class="scrollrevs w-full h-pic object-cover" alt="">
+      
+    </section>
+
+<!-- Contact -->
+ <section class="mx-auto container mt-20 w-full h-full lg:px-14 xl:px-14 px-4">
+    <div class="scrollrevs">
+        <h1 class="tracking-tighter text-7xl">View my <b>journey!</b>
+            <div class="bg-black w-10 h-1 mt-4"></div></h1>
+    </div>
+    
+    <div class="md:flex lg:flex xl:flex grid mt-20  md:gap-10 lg:gap-10 xl:gap-10 gap-10 scrollrevs">
+        <div class="grid md:w-3/4 lg:w-3/4 xl:w-3/4 w-full">
+            <div >
+  
+            <img src="./img/reymark.png" class="w-screen" alt="">
+            <h1 class="text-xl font-semibold mt-8 scrollrevs">Reymark Boquiron</h1>
+            <p class="mt-8 text-gray-500 lg:mt-6 xl:mt-6 w-full text-sm scrollrevs">Through my education, I have acquired a wide range of knowledge and skills in building systems, programming, and prototype development. I am eager to continue to develop these
+                abilities by pursuing a career in the Tech industry and delving deeper into my passion for
+                technology.</p>
+             
+            <div class="w-full h-0.5 bg-black mt-8 scrollrevs"></div>
+            <div class="flex justify-between mt-2 scrollrevs">
+                <h1 class="text-sm font-semibold ">PROFESSION</h1>
+                <h1 class="text-sm font-semibold ">FRONTEND AND UI/UX WEB DESIGNER</h1>
+            </div>
+            <div class="w-full h-0.5 bg-black mt-2 scrollrevs"></div>
+            <div class="flex justify-between mt-2 scrollrevs">
+                <h1 class="text-sm font-semibold ">DATE OF BIRTH</h1>
+                <h1 class="text-sm font-semibold ">05 MAY 2001</h1>
+            </div>
+            <div class="w-full h-0.5 bg-black mt-2 scrollrevs"></div>
+            <div class="flex justify-between mt-2 scrollrevs">
+                <h1 class="text-sm font-semibold ">EDUCATION</h1>
+                <h1 class="text-sm font-semibold ">BACHELORS DEGREE</h1>
+            </div>
+            <div class="w-full h-0.5 bg-black mt-2 scrollrevs"></div>
+            <button class="scrollrevs bg-black mt-8 w-full py-3 text-white hover:bg-[#8d6e63] transition">Send message</button>
+        </div>
+        </div>
+
+        <div class="grid w-full">
+              
+           
+            <div class=" w-full">
+                <h1 class="font-semibold text-2xl flex gap-2 justify-end scrollrevs">EDUCATION</h1>
+                <div class="w-full h-1.5 bg-black mt-2 scrollrevs"></div>
+
+                <div class="flex mt-4 justify-between text-md w-full scrollrevs">
+                    <h1><b>Rizal Technological University</b> - Pasig Campus, Pasig City <br class="text-sm">Bachelor of Science in Computer Engineering.<br>
+                    </h1>
+                    <h1>2019 - 2023</h1>
+
+                </div>
+              <div class="text-sm mt-4 scrollrevs">
+                <li>Relevant Coursework: Embedded systems and microprocessors , Web developing
+                </li>
+                <li>Awards: Academic Achiever, Deans Lister
+                </li>
+              </div>
+                  
+              <div class="w-full h-0.5 bg-gray-300 mt-4 scrollrevs"></div>     
+               
+              <div class="flex mt-4 justify-between text-md w-full scrollrevs">
+                <h1><b>Marikina Polytechnic College</b> - Marikina City <br class="text-sm">TVL-ICT - Computer software Servicing.<br>
+                </h1>
+                <h1>2017 - 2019</h1>
+
+            </div>
+          <div class="text-sm mt-4 scrollrevs">
+            <li>NCII Completer - Computer software
+                servicing.
+                
+            </li>
+           
+            </div>
+            <div class="w-full h-0.5 bg-gray-300 mt-4 scrollrevs"></div>     
+               
+            <div class="flex mt-4 justify-between text-md w-full scrollrevs">
+              <h1><b>Cupang National High School</b> - Antipolo City 
+              </h1>
+              <h1>2013 - 2017</h1>
+
+          </div>
+       
+          <h1 class="font-semibold text-2xl flex gap-2 justify-end mt-10 scrollrevs">WORK EXPERIENCE</h1>
+            <div class="w-full h-1.5 bg-black mt-2 scrollrevs"></div>
+            <div>
+                
+            </div>
+            <div class="flex justify-between mt-4 scrollrevs">
+                <h1>
+                    <b>Chanz IT Business Solutions INC.</b> <br class="text-sm">Full stack web-developer intern
+                  </h1>
+                  
+                <h1>February - April 2023</h1>
+            </div>
+            <div class="text-sm mt-4 scrollrevs">
+                <li>Developed a number to word converter website with Peso to USD currency that is also responsive and user
+                    friendly.
+                    
+                </li>
+               <li>
+                Developed a professional gallery website showcasing various renowned tourist destinations worldwide.
+The website provides comprehensive information about each location and offers a user-friendly interface
+with seamless responsiveness across multiple devices.
+
+               </li>
+                </div>
+
+                <div class="w-full h-0.5 bg-gray-300 mt-4 scrollrevs"></div>     
+           
+                <div class="flex justify-between mt-4 scrollrevs">
+                    <h1>
+                        <b>Additional Professional Experience</b> <br class="text-sm">Freelance
+                      </h1>
+                      
+                    
+                </div>
+                <div class="text-sm mt-4 scrollrevs">
+                   
+                  <li>
+                    Web Designing
+
+                  </li>
+                  <li>
+                    Installation of Computer Software and Hardware
+
+                  </li>
+                  <li>
+                    Fundamentals of 3D Modeling and Animation
+
+                  </li>
+                  <li>
+                    Computer Repair Services
+
+                  </li>
+                    </div>
+
+                    <h1 class="font-semibold text-2xl flex gap-2 justify-end mt-10 scrollrevs">SKILLS</h1>
+                    <div class="w-full h-1.5 bg-black mt-2 scrollrevs"></div>
+                    <div>
+                    <div class="text-sm mt-4 scrollrevs">
+                        <li>
+                            <b>Programming language:</b> HTML, CSS, JavaScript, Python, C++, .NET, and PHP. with experience in creating
+                            different web applications.
+                           </li>
+                           <li>
+                            <b>Frameworks:</b> Laravel and Tailwind CSS.
+                           </li>
+                           <li>
+                            <b>Web Design Tools:</b> Figma, Adobe XD and Photoshop
+                           </li>
+                           <li>
+                            Experienced in Graphic designing, Web Designing, Computer Hardware Servicing and Microsoft Word.  
+                        </li>
+                           <li>
+                            Demonstrates satisfactory oral and written communication abilities
+                           </li>
+                    </div>
+        </div>
+     
+        <h1 class="font-semibold text-2xl flex gap-2 justify-end mt-10 scrollrevs">ACADEMIC PROJECTS</h1>
+                    <div class="w-full h-1.5 bg-black mt-2 scrollrevs"></div>
+                    <div class="grid justify-between mt-4 scrollrevs">
+                        <h1>
+                            <b>Gabay Pilipinas Web Application
+                            </b>
+                          </h1>
+                          
+                        <li class="mt-4 text-sm ">
+                            Developed a Travel web application named Gabay Pilipinas
+
+                        </li>
+                    </div>
+                    <div class="w-full h-0.5 bg-gray-300 mt-4 scrollrevs"></div>     
+                    <div class="grid justify-between mt-4 scrollrevs">
+                        <h1>
+                            <b>Fusion Integration an IoT Based Monitoring and Watering System for Small Scale Farmers Arduino
+                                based watering system powered by solar energy resource.
+                            </b>
+                          </h1>
+                          
+                        <li class="mt-4 text-sm">
+                            Monitor crop condition depending on soil moisture and water them accordingly, whether time-based
+                            or sensor-based.
+                        
+                        </li>
+                    </div>
+                    <div class="w-full h-0.5 bg-gray-300 mt-4 scrollrevs"></div>     
+                    <div class="grid justify-between mt-4 scrollrevs">
+                        <h1>
+                            <b>Seeing Beyond Sight: The Smart Hat for the Visually Impaired with AI and IoT Technology.
+                            </b>
+                          </h1>
+                          
+                          <div class="mt-4 text-sm">
+                            <li >
+                                Developed a hat incorporating advanced camera and AI technology for object detection
+                            </li>
+                            <li >
+                                Implemented an ultrasonic sensor to accurately detect the presence of objects or individuals
+                            </li>
+                            <li >
+                                Designed and integrated an AI Voice assistant named "Emma" within our dedicated mobile application
+                            </li>
+                            <li >
+                                "Emma" efficiently responds to user inquiries, saving phone numbers, and making phone calls and
+                                sending messages to the user's designated guardian
+                                
+                            </li>
+
+                            <li >
+                                Equipped the AI Voice assistant to swiftly contact emergency hotlines during critical situations
+
+                            </li>
+                          </div>
+                       
+                    </div>
+
+                    <div class="mt-10 scrollrevs">
+                        <a href="../src/pdf/Reymark_BoquironCV.pdf" download="Resume.pdf" class="bg-black hover:bg-[#8d6e63] transition text-white py-2 px-4 ">Download Resume</a>
+                    </div>
+                  
+
+
+    </div>
+ </section>
+
+
+    <footer class="container w-full h-full mx-auto font-sans lg:px-14 xl:px-14 px-4 mt-20">
+      <div class="bg-gray-300  h-0.5 w-full container mx-auto  lg:px-14 xl:px-14 px-4">
+
+      </div>
+     
+      
+      <h1 class="md:text-7xl lg:text-7xl xl:text-7xl text-6xl mt-20"><b>Check</b> portfolio!</h1>
+      <div class="mt-8">
+        
+        <div class="transition border-b-2 border-gray-300 w-24 cursor-pointer lg:mt-6 xl:mt-6 mt-10 hover:border-[#8d6e63]">
+          <h1 class="font-bold mb-1">Portfolio</h1>
+        </div>
+      </div>
+
+    
+
+
+      <div class="md:flex lg:flex xl:flex grid gap-4 mt-36 md:text-md lg:text-md xl:text-md">
+        <h1 class="text-gray-500">Follow me on</h1>
+        <div class="md:flex lg:flex xl:flex grid font-semibold gap-2">
+          <a href="https://www.facebook.com/reymark.boquiron" target="_blank" class="hover:text-[#8d6e63] transition">Facebook</a>
+              <a href="https://www.instagram.com/rylllls/" target="_blank" class="hover:text-[#8d6e63] transition">Instagram</a>
+              <a href="https://www.linkedin.com/in/reymark-boquiron-b6b19b175/" target="_blank" class="hover:text-[#8d6e63] transition">Linkedin</a>
+        </div>
+        
+      </div>
+
+      <div class="justify-between flex md:mt-0 lg:mt-0 xl:mt-0 mt-4">
+        <div class="text-gray-500 md:flex lg:flex xl:flex grid md:gap-1 lg:gap-1 xl:gap-1 gap-0">
+          <h1>© 2023. Reymark.dev</h1>
+          <h1>All rights reserved.</h1>
+          
+        </div>
+      
+      </div>
+    
+      
+    </footer>
+
+    <div class="justify-end flex px-7 mx-auto mb-20 scrollrevss">
+      <a href="#Home" class="tooltip ">
+        <i class="fa-solid fa-chevron-up  px-3 py-3 border-black border-2 cursor-pointer hover:scale-110 transition hover:text-[#8d6e63] hover:border-[#8d6e63]"></i>
+        <span class="tooltiptext font-semibold">Scroll to top</span>
+      </a>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./scroll.js"></script>
+    <script src="./scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script> 
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -69,13 +69,13 @@
     </div>
       <div class="flex mt-8 justify-between w-full mx-auto ">
         <div class="justify-between font-semibold flex w-full fixed mx-auto h-24 py-8 top-0 lg:px-7 xl:px-7 px-4">
-          <div>
+          <a href="https://rylllll.github.io/Portfolio/src/">
             <h1
-              id="text2" class="text-md tracking-widest cursor-pointer text-white transition font-bold hover:text-[#8d6e63]"
+              class="text-md tracking-widest cursor-pointer transition font-bold hover:text-[#8d6e63]"
             >
               REY.DEV
             </h1>
-          </div>
+          </a>
 
           <div class="flex gap-6">
             <div class="cursor-pointer hover:text-[#8d6e63]">
@@ -94,8 +94,8 @@
           <div class="inline-grid lg:px-14 xl:px-14 px-4 gap-6">
             <a href="https://rylllll.github.io/Portfolio/src/" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Homepage</a>
             <a href="https://rylllll.github.io/Portfolio/src/portfolio.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Portfolio</a>
-            <a href="../pages/portfolio.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Resume</a>
-            <a href="./contact.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-white">Contact</a>
+            <a href="https://rylllll.github.io/Portfolio/src/resume.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-gray-400 transition hover:text-white">Resume</a>
+            <a href="https://rylllll.github.io/Portfolio/src/contact.html" class=" animate__animated animate__fadeInUp md:text-7xl lg:text-7xl xl:text-7xl text-5xl text-white">Contact</a>
             
           
           
@@ -168,42 +168,47 @@
         </div>
         </div>
 
-        <div class="grid">
-            <div class="flex gap-10">
-                <div class="">
-                    <h1 class="font-semibold flex gap-2">Full Name <p class="text-red-700">*</p></h1>
-                    <input
-                        type="text"
-                        class="mt-4 transition border-b-2 py-3 border-black  lg:w-64 xl:w-64 w-36 lg:mt-6 xl:mt-6 focus:outline-none focus:border-[#8d6e63]"
-                        placeholder="Your name"
-                    >
-                </div>
-                
-                
-                <div class="">
-                    <h1 class="font-semibold flex gap-2">Email Address <p class="text-red-700">*</p></h1>
-                    <input
-                        type="text"
-                        class="mt-4 transition border-b-2 py-3 border-black  lg:w-64 xl:w-64 w-36 lg:mt-6 xl:mt-6 focus:outline-none focus:border-[#8d6e63]"
-                        placeholder="Your e-mail"
-                    >
-                </div>
-    
-            </div>
-
-            <div class="w-full mt-10">
-                <h1 class="font-semibold flex gap-2">Message <p class="text-red-700">*</p></h1>
-                <div class="flex flex-col">
-                    <textarea
-                        rows="6"
-                        class="mt-4 transition border-b-2 border-black md:w-full lg:w-full xl:w-full w-full lg:mt-6 xl:mt-6 focus:outline-none focus:border-[#8d6e63] resize-none"
-                        placeholder="Your Message"
-                    ></textarea>
-                </div>
-            </div>
-
-            <button class="bg-black mt-8 w-44 py-4 text-white hover:bg-[#8d6e63] transition">Send Now</button>
-        </div>
+        <form action="" id="contact-form">
+          <div class="grid">
+              <div class="flex gap-10">
+                  <div class="">
+                      <h1 class="font-semibold flex gap-2">Full Name <p class="text-red-700">*</p></h1>
+                      <input
+                          type="text"
+                          name="user_name"
+                          class="mt-4 transition border-b-2 py-3 border-black  lg:w-64 xl:w-64 w-36 lg:mt-6 xl:mt-6 focus:outline-none focus:border-[#8d6e63]"
+                          placeholder="Your name"
+                      >
+                  </div>
+                  
+                  <div class="">
+                      <h1 class="font-semibold flex gap-2">Email Address <p class="text-red-700">*</p></h1>
+                      <input
+                          type="email"
+                          name="user_email"
+                          class="mt-4 transition border-b-2 py-3 border-black  lg:w-64 xl:w-64 w-36 lg:mt-6 xl:mt-6 focus:outline-none focus:border-[#8d6e63]"
+                          placeholder="Your e-mail"
+                      >
+                  </div>
+              </div>
+      
+              <div class="w-full mt-10">
+                  <h1 class="font-semibold flex gap-2">Message <p class="text-red-700">*</p></h1>
+                  <div class="flex flex-col">
+                      <textarea
+                      name="user_message"
+                          rows="6"
+                          class="mt-4 transition border-b-2 border-black md:w-full lg:w-full xl:w-full w-full lg:mt-6 xl:mt-6 focus:outline-none focus:border-[#8d6e63] resize-none"
+                          placeholder="Your Message"
+                      ></textarea>
+                  </div>
+              </div>
+              
+              <p class="text-black" id="contact-message"></p>
+              <button type="submit" class="bg-black mt-8 w-44 py-4 text-white hover:bg-[#8d6e63] transition">Send Now</button>
+          </div>
+      </form>
+      
      
     </div>
  </section>
@@ -296,10 +301,12 @@
       </a>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="../src/main.js"></script>
     <script src="./scroll.js"></script>
     <script src="./scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   </body>
 </html>
